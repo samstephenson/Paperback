@@ -1,0 +1,112 @@
+body {
+	background: #fafafa;
+	color: #121616 !important;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	display: flex;
+}
+
+#logo {
+	margin-top: 4rem;
+}
+
+#logo img, #logo h2 {
+	float: left;
+}
+
+#logo h2 {
+	font-size: 1.4rem;
+	font-family: "avenir";
+	font-weight: 500;
+	margin-left: 1rem;
+	color: #0066ff;
+	line-height: 1.7rem;
+}
+
+#overflowWrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+#wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#column {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.textBlock {
+	min-width: 20rem;
+	margin: 0 5rem;
+}
+
+.middle {
+}
+
+.bottom {
+	margin-bottom: 1rem;
+	color: #999;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 2rem;
+	line-height: 1.5;
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+.bottom a {
+	border-bottom: 0.5px solid #999;
+}
+
+button {
+	border: none;
+	border-radius: .25rem;
+	color: white;
+	background: #0066ff;
+	padding: .75rem 1.5rem;
+	font-size: 1rem;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s ease all;
+}
+
+a button {
+	text-decoration: none;
+}
+
+button:hover {
+	background: #0267FF;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+	transform: translateY(-1px);
+}
+
+button img {
+	margin-right: .5rem;
+}
+
+img.browserScreen {
+	box-shadow: 0 16px 48px 0 rgba(0,0,0,0.2);
+	margin-top: 3rem;
+}

@@ -1,0 +1,248 @@
+#backgroundImage, .page {
+    background-color: #fff !important;
+}
+
+#controls {
+    color: blue !important;
+}
+
+#header {
+    background: no-repeat 1rem .75rem #fff !important;
+    box-shadow: 0 1px rgba(99,114,130,0.16) !important;
+    /*background-image: url(https://i.imgur.com/OZwnrLq.png) !important;
+    background-size: 24px;*/
+    display: flex !important;
+    font-size: 14px !important;
+    min-width: auto !important;
+    padding: .5rem 0rem !important;
+    border-bottom: none !important;
+}
+
+#logo {
+    background-image: url(/media/i/themes/light_logo.png) !important;
+}
+
+#header, #keyboardShortcutHelper {
+    -webkit-transition: opacity .2s !important;
+}
+
+#header:hover, #keyboardShortcutHelper:hover {
+    -webkit-transition: opacity .2s !important;
+    opacity: 1 !important;
+}
+
+/*#logo {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/paperback_logo.png") !important;
+}*/
+
+#searchBox {
+    background: #efefef !important;
+    border: none !important;
+    border-radius: 3px !important;
+    padding: .5rem !important;
+    width: 100% !important;
+}
+
+#searchForm {
+    /*flex-grow: 1 !important;*/
+    top: -1px !important;
+}
+
+#searchForm.clearPrompt #searchBox {
+    background: #eee !important;
+    border-color: #eee8d5 !important;
+    color: #111 !important;
+}
+
+#visible {
+    background: transparent  !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    width: 400px !important;
+}
+
+.bullet {
+    margin-left: 2px !important;
+}
+
+.bullet, #bulletBucket .bulletBucketBullet {
+    background-color: rgba(0,102,255,0.1) !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet.svg') !important;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 4px 4px !important;
+    height: 16px !important;
+    top: 5px !important;
+    width: 16px !important;
+}
+
+.bullet:hover, .project.task>.name>.bullet:hover, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
+	background-color: rgba(0,102,255,0.1) !important;
+	border-radius: 100% !important;
+}
+
+.selected>.children>.project>.name>.bullet {
+	margin-top: 3px !important;
+}
+
+.footer, #bottomLinks, .proPitch {
+    display: none !important;
+}
+
+.pageStar {
+    top: 2.25rem !important;
+}
+
+.parent>.name>.content {
+    color: #0066ff !important;
+    font-size: 14px !important;
+}
+
+.parent>.name>.parentArrow {
+    color: rgba(0,102,255,0.2) !important;
+}
+
+.project.task>.name>.bullet, .project.open>.name>.bullet, .noHalo .bullet {
+    background-color: transparent !important;
+}
+
+.saveButton {
+    width: auto !important;
+    opacity: 0.5;
+}
+
+.saveButton, .showCompletedButton, #helpButton, .menu-button, #buttonBar {
+    background: none !important;
+    border: none !important;
+    color: #627283 !important;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    padding-left: 1rem !important;
+    padding-right: 0 !important;
+}
+
+.showCompletedButton {
+	padding-right: 1rem !important;
+}
+
+.menu-button {
+	padding: .5rem .5rem !important;
+}
+.menu-button:hover {
+	background: #eee !important;
+	border-radius: 4px;
+}
+#buttonBar {
+    /*margin: 0 .5rem 0 1rem !important;*/
+    padding: 0 !important;
+}
+
+.menu-icon {
+    margin: 0.3rem 0 !important;
+    opacity: 1 !important;
+    background-position: -1px -80px !important;
+}
+
+.menu-options {
+    margin-top: .5rem !important;
+}
+
+.saveButton:hover, .showCompletedButton:hover, #helpButton:hover {
+    color: #1B2734 !important;
+}
+
+#savedViewHUDButton {
+    margin: 0 1.5rem !important;
+    background-image: url(/media/i/saved-views-button-minimal.svg) !important;
+}
+
+#savedViewHUDButton:hover {
+    background: #eee !important;
+}
+
+.selected {
+    border-top: none !important;
+    margin-top: 1rem !important;
+}
+
+.selected.project {
+    padding-top: 1rem !important;
+}
+
+.selected .project>.name {
+    padding-left: 73px !important;
+}
+
+.selected.project>.name {
+    font-size: 2em !important;
+}
+
+.selected.project>.name>.content {
+    line-height: 1.2 !important;
+}
+
+.selected>.children>.project>.children .project>.name>.content {
+    padding-top: 5px !important;
+}
+
+.selected>.children>.project>.children>.project {
+    font-size: 16px !important;
+}
+.selected>.notes>.content {
+    margin-bottom: 1rem !important;
+}
+
+.top,.right,.bottom,.left {
+    display: none !important;
+}
+
+.undo-button, .redo-button {
+    display: none !important;
+}
+
+a.content {
+    line-height: 1.4 !important;
+}
+
+a.contentLink {
+    color: #0066ff  !important;
+}
+
+body, #documentView {
+    font-size: 16px !important;
+}
+
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox {
+    color: #1B2734 !important;
+    font-family: -apple-system, BlinkMacSystemFont,
+"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+"Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif !important;
+    transition: all 0.1s ease !important;
+}
+
+div.content {
+    line-height: 1.4 !important;
+    max-width: 36rem !important;
+}
+
+div.getMoreSpaceButton.hoverHand {
+    display: none !important;
+}
+
+div.page.active {
+    border-style: none !important;
+}
+
+span.contentTag {
+    color: #0066ff !important;
+}
+
+span.contentTagText {
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+}
+
+.noted>.notes>.content {
+    color: #627283 !important;
+}
