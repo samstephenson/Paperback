@@ -76,6 +76,11 @@
     width: 16px !important;
 }
 
+.bullet.empty {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg') !important;
+	background-size: 6px 6px !important;
+}
+
 .bullet:hover, .project.task>.name>.bullet:hover, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
 	background-color: rgba(0,102,255,0.1) !important;
 	border-radius: 100% !important;
@@ -206,13 +211,18 @@ a.content {
 
 a.contentLink {
     color: #0066ff  !important;
+    text-decoration: none !important;
+}
+
+a.contentLink:hover {
+	text-decoration: none;
 }
 
 body, #documentView {
     font-size: 16px !important;
 }
 
-body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox {
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD {
     color: #1B2734 !important;
     font-family: -apple-system, BlinkMacSystemFont,
 "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
@@ -224,6 +234,10 @@ sans-serif !important;
 div.content {
     line-height: 1.4 !important;
     max-width: 36rem !important;
+}
+
+.content:empty {
+
 }
 
 div.getMoreSpaceButton.hoverHand {
@@ -245,4 +259,31 @@ span.contentTagText {
 
 .noted>.notes>.content {
     color: #627283 !important;
+}
+
+#savedViewHUD {
+	bottom: inherit !important;
+	top: 45px !important;
+	background-color: white !important;
+	box-shadow: 0 1px rgba(99,114,130,0.16) !important;
+}
+
+.savedViewPage {
+	border: 1px solid #ccc !important;
+	background-color: white !important;
+	color: inherit !important;
+}
+
+.savedViewPage.selectedSavedViewPage {
+	box-shadow: none !important;
+	border-color: #0066ff!important;
+	background-color: #fafafa !important;
+}
+
+.savedViewPageInnerContainer {
+	opacity: 1 !important;
+}
+
+.savedViewPageFader {
+	display: none !important;
 }

@@ -2,7 +2,7 @@
   "manifest_version": 2,
  
   "name": "Paperback for Workflowy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A focused new interface for your lists, notes and ideas.",
  
   "content_scripts": [{
