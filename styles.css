@@ -8,7 +8,7 @@
 
 #header {
     background: no-repeat 1rem .75rem #fff !important;
-    box-shadow: 0 1px rgba(99,114,130,0.16) !important;
+    /* box-shadow: 0 1px rgba(99,114,130,0.16) !important; */
     /*background-image: url(https://i.imgur.com/OZwnrLq.png) !important;
     background-size: 24px;*/
     display: flex !important;
@@ -16,10 +16,21 @@
     min-width: auto !important;
     padding: .5rem 0rem !important;
     border-bottom: none !important;
+    transition: 0.2s ease all !important;
+}
+
+#header.scroll {
+    box-shadow: 0 1px rgba(99,114,130,0.16) !important;
 }
 
 #logo {
-    background-image: url(/media/i/themes/light_logo.png) !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_logo.svg') !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    padding: 0 !important;
+    margin: 0 1rem !important;
+    background-position: center !important;
+    background-size: 2rem !important;
 }
 
 #header, #keyboardShortcutHelper {
@@ -31,27 +42,37 @@
     opacity: 1 !important;
 }
 
-/*#logo {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/paperback_logo.png") !important;
-}*/
-
 #searchBox {
-    background: #efefef !important;
-    border: none !important;
-    border-radius: 3px !important;
+  	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg') !important;
+  	background-position: top right;
+  	background-repeat: no-repeat;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
     padding: .5rem !important;
-    width: 100% !important;
+    width: 15rem !important;
 }
 
 #searchForm {
     /*flex-grow: 1 !important;*/
     top: -1px !important;
+    margin: 0 1rem !important;
 }
 
 #searchForm.clearPrompt #searchBox {
-    background: #eee !important;
-    border-color: #eee8d5 !important;
-    color: #111 !important;
+	background-image: none !important;
+}
+
+#searchCancel {
+	top: 4px !important;
+	right: 4px !important;
+	margin: 0 0rem 0 0 !important;
+	width: 12px !important;
+	height: 12px !important;
+}
+
+#searchCancel>svg>line {
+	stroke: #1B2734 !important;
+	stroke-width: 1.5px !important;
 }
 
 #visible {
@@ -116,22 +137,30 @@
     opacity: 0.5;
 }
 
+.saveButton_saved {
+	display: none !important;
+}
+
 .saveButton, .showCompletedButton, #helpButton, .menu-button, #buttonBar {
     background: none !important;
     border: none !important;
     color: #627283 !important;
     font-size: 12px !important;
     line-height: 1.2 !important;
-    padding-left: 1rem !important;
+    padding-left: 0rem !important;
     padding-right: 0 !important;
 }
 
 .showCompletedButton {
-	padding-right: 1rem !important;
+	float: none !important;
+	text-align: left !important;
+	color: white !important;
+	padding: .5rem 1rem !important;
+	width: auto !important
 }
 
 .menu-button {
-	padding: .5rem .5rem !important;
+	padding: 0 !important;
 }
 .menu-button:hover {
 	background: #eee !important;
@@ -143,26 +172,65 @@
 }
 
 .menu-icon {
-    margin: 0.3rem 0 !important;
-    opacity: 1 !important;
-    background-position: -1px -80px !important;
+   	width: 2rem !important;
+   	height: 2rem !important;
+   	opacity: 1 !important;
+  	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_menu.svg') !important;
+  	background-position: 0 0 !important;
+  	padding: 0 !important;
+
 }
 
 .menu-options {
     margin-top: .5rem !important;
+    background: white !important;
+    border: 1px #ddd solid !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07) !important;
+    color: #1B2735 !important;
+    border-radius: .25rem !important;
 }
 
-.saveButton:hover, .showCompletedButton:hover, #helpButton:hover {
-    color: #1B2734 !important;
+.menu-options>#userEmail {
+	padding: .5rem 1rem !important;
+	font-size: 12px !important;
+}
+
+.menu-options>.button {
+	padding: .5rem 1rem !important;
+}
+
+.menu-options>.button:hover {
+	background: #eee !important;
 }
 
 #savedViewHUDButton {
-    margin: 0 1.5rem !important;
-    background-image: url(/media/i/saved-views-button-minimal.svg) !important;
+   	margin: 0 !important;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_star.svg') !important;
+	width: 2rem !important;
+	height: 2rem !important;
+	padding: 0 !important;
+	background-position: top left !important;
+	background-size: 2rem !important;
 }
 
 #savedViewHUDButton:hover {
-    background: #eee !important;
+    background-color: #eee !important;
+}
+
+#helpButton {
+	width: 2rem !important;
+	height: 2rem !important;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_help.svg') !important;
+	content: none;
+	padding: 0 !important;
+	background-repeat: no-repeat !important;
+	position: fixed !important;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+#helpButton .topBarButtonTextContainer {
+	display: none !important;
 }
 
 .selected {
@@ -264,7 +332,7 @@ span.contentTagText {
 #savedViewHUD {
 	bottom: inherit !important;
 	top: 45px !important;
-	background-color: white !important;
+	background-color: rgba(255,255,255,0.8) !important;
 	box-shadow: 0 1px rgba(99,114,130,0.16) !important;
 }
 

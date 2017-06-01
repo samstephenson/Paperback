@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="ic_logo">
+                <g id="Group-2">
+                    <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="32" height="32" rx="4"></rect>
+                    <g id="Group-Copy" transform="translate(6.000000, 6.000000)" fill="#1B2735">
+                        <rect id="Rectangle" fill-opacity="0.309924139" opacity="0.534590127" x="0" y="1.25" width="20" height="2.5" rx="1.25"></rect>
+                        <rect id="Rectangle-Copy" fill-opacity="0.309924139" opacity="0.534590127" x="7.5" y="8.75" width="12.5" height="2.5" rx="1.25"></rect>
+                        <rect id="Rectangle-Copy-2" fill-opacity="0.309924139" opacity="0.534590127" x="0" y="16.25" width="20" height="2.5" rx="1.25"></rect>
+                        <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                        <circle id="Oval-Copy" cx="7.5" cy="10" r="2.5"></circle>
+                        <circle id="Oval-Copy-2" cx="2.5" cy="17.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
