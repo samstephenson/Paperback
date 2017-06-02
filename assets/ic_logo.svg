@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
-    <title>ic_logo</title>
+    <title>Artboard Copy 4</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <circle id="path-1" cx="2" cy="2" r="2"></circle>
+        <circle id="path-2" cx="7" cy="9" r="2"></circle>
+        <circle id="path-3" cx="2" cy="16" r="2"></circle>
+    </defs>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard">
+        <g id="Artboard-Copy-4">
             <g id="ic_logo">
                 <g id="Group-2">
-                    <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="32" height="32" rx="4"></rect>
-                    <g id="Group-Copy" transform="translate(6.000000, 6.000000)" fill="#1B2735">
-                        <rect id="Rectangle" fill-opacity="0.309924139" opacity="0.534590127" x="0" y="1.25" width="20" height="2.5" rx="1.25"></rect>
-                        <rect id="Rectangle-Copy" fill-opacity="0.309924139" opacity="0.534590127" x="7.5" y="8.75" width="12.5" height="2.5" rx="1.25"></rect>
-                        <rect id="Rectangle-Copy-2" fill-opacity="0.309924139" opacity="0.534590127" x="0" y="16.25" width="20" height="2.5" rx="1.25"></rect>
-                        <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
-                        <circle id="Oval-Copy" cx="7.5" cy="10" r="2.5"></circle>
-                        <circle id="Oval-Copy-2" cx="2.5" cy="17.5" r="2.5"></circle>
+                    <g id="Group-Copy" transform="translate(6.000000, 7.000000)">
+                        <rect id="Rectangle" fill="#1B2735" x="0" y="1" width="20" height="2" rx="1"></rect>
+                        <rect id="Rectangle-Copy" fill="#1B2735" x="8" y="8" width="12" height="2" rx="1"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#1B2735" x="0" y="15" width="20" height="2" rx="1"></rect>
+                        <g id="Oval">
+                            <use fill="#1B2735" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <circle stroke="#FFFFFF" stroke-width="1.5" cx="2" cy="2" r="2.75"></circle>
+                        </g>
+                        <g id="Oval-Copy">
+                            <use fill="#1B2735" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <circle stroke="#FFFFFF" stroke-width="1.5" cx="7" cy="9" r="2.75"></circle>
+                        </g>
+                        <g id="Oval-Copy-2">
+                            <use fill="#1B2735" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <circle stroke="#FFFFFF" stroke-width="1.5" cx="2" cy="16" r="2.75"></circle>
+                        </g>
                     </g>
                 </g>
             </g>
