@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
  
-  "name": "Paperback: WorkFlowy Modernised",
-  "version": "0.1.4",
-  "description": "A focused new interface for your lists, notes and ideas.",
+  "name": "Paperback: Workflowy modernised",
+  "version": "0.2.2",
+  "description": "A cleaner, more colorful interface for WorkFlowy",
  
   "content_scripts": [{
     "css": ["styles.css"],

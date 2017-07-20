@@ -1,3 +1,4 @@
+/* Backgrounds */
 body {
 	background: white !important;
 }
@@ -6,15 +7,30 @@ body {
     background-color: none !important;
 }
 
-#controls {
-    color: blue !important;
+
+/* Horizontal Spacing */
+
+.open>.children {
+	padding-left: 1.5rem !important;
+	margin-left: 9px !important;
 }
+/* Correct for header */
+.selected.project>.children, .parent.project>.children {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+
+.selected .project>.name>.content {
+	line-height: 1.25rem !important;
+}
+
+/* Alerts */
+
+/* /Alerts */
+/* Header */
 
 #header {
     background: no-repeat 1rem .75rem #fff !important;
-    /* box-shadow: 0 1px rgba(99,114,130,0.16) !important; */
-    /*background-image: url(https://i.imgur.com/OZwnrLq.png) !important;
-    background-size: 24px;*/
     display: flex !important;
     font-size: 14px !important;
     min-width: auto !important;
@@ -38,15 +54,6 @@ body {
     background-size: 2rem !important;
 }
 
-#header, #keyboardShortcutHelper {
-    -webkit-transition: opacity .2s !important;
-}
-
-#header:hover, #keyboardShortcutHelper:hover {
-    -webkit-transition: opacity .2s !important;
-    opacity: 1 !important;
-}
-
 #searchBox {
   	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg') !important;
   	background-position: top right;
@@ -58,7 +65,6 @@ body {
 }
 
 #searchForm {
-    /*flex-grow: 1 !important;*/
     top: -1px !important;
     margin: 0 1rem !important;
 }
@@ -87,56 +93,6 @@ body {
     width: 400px !important;
 }
 
-.bullet {
-    margin-left: 2px !important;
-}
-
-.bullet, #bulletBucket .bulletBucketBullet {
-    background-color: rgba(0,102,255,0.1) !important;
-    background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet.svg') !important;
-    background-position: 50% !important;
-    background-repeat: no-repeat !important;
-    background-size: 4px 4px !important;
-    height: 16px !important;
-    top: 5px !important;
-    width: 16px !important;
-}
-
-.bullet.empty {
-	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg') !important;
-	background-size: 6px 6px !important;
-}
-
-.bullet:hover, .project.task>.name>.bullet:hover, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
-	background-color: rgba(0,102,255,0.1) !important;
-	border-radius: 100% !important;
-}
-
-.selected>.children>.project>.name>.bullet {
-	margin-top: 3px !important;
-}
-
-.footer, #bottomLinks, .proPitch {
-    display: none !important;
-}
-
-.pageStar {
-    top: 2.25rem !important;
-}
-
-.parent>.name>.content {
-    color: #0066ff !important;
-    font-size: 14px !important;
-}
-
-.parent>.name>.parentArrow {
-    color: rgba(0,102,255,0.2) !important;
-}
-
-.project.task>.name>.bullet, .project.open>.name>.bullet, .noHalo .bullet {
-    background-color: transparent !important;
-}
-
 .saveButton {
     width: auto !important;
     opacity: 0.5;
@@ -150,7 +106,7 @@ body {
     background: none !important;
     border: none !important;
     color: #627283 !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.2 !important;
     padding-left: 0rem !important;
     padding-right: 0 !important;
@@ -169,12 +125,13 @@ body {
 .menu-button {
 	padding: 0 !important;
 }
+
 .menu-button:hover {
 	background: #eee !important;
 	border-radius: 4px;
 }
+
 #buttonBar {
-    /*margin: 0 .5rem 0 1rem !important;*/
     padding: 0 !important;
 }
 
@@ -237,107 +194,13 @@ body {
 	left: auto !important;
 	right: 1rem;
 	z-index: 100 !important;
-}	
+}
 
 #helpButton .topBarButtonTextContainer {
 	display: none !important;
 }
 
-.selected {
-    border-top: none !important;
-    margin-top: 1rem !important;
-}
-
-.selected.project {
-    padding-top: 1rem !important;
-}
-
-.selected .project>.name {
-    padding-left: 73px !important;
-}
-
-.selected.project>.name {
-    font-size: 2em !important;
-}
-
-.selected.project>.name>.content {
-    line-height: 1.2 !important;
-}
-
-.selected>.children>.project>.children .project>.name>.content {
-    padding-top: 5px !important;
-}
-
-.selected>.children>.project>.children>.project {
-    font-size: 16px !important;
-}
-.selected>.notes>.content {
-    margin-bottom: 1rem !important;
-}
-
-.top,.right,.bottom,.left {
-    display: none !important;
-}
-
-.undo-button, .redo-button {
-    display: none !important;
-}
-
-a.content {
-    line-height: 1.4 !important;
-}
-
-a.contentLink {
-    color: #0066ff  !important;
-    text-decoration: none !important;
-}
-
-a.contentLink:hover {
-	text-decoration: none;
-}
-
-body, #documentView {
-    font-size: 16px !important;
-}
-
-body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a {
-    color: #1B2734 !important;
-    font-family: -apple-system, BlinkMacSystemFont,
-"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-"Fira Sans", "Droid Sans", "Helvetica Neue",
-sans-serif !important;
-    transition: all 0.1s ease !important;
-}
-
-div.content {
-    line-height: 1.4 !important;
-    max-width: 36rem !important;
-}
-
-.content:empty {
-
-}
-
-div.getMoreSpaceButton.hoverHand {
-    display: none !important;
-}
-
-div.page.active {
-    border-style: none !important;
-}
-
-span.contentTag {
-    color: #0066ff !important;
-}
-
-span.contentTagText {
-    line-height: 1.4 !important;
-    text-decoration: none !important;
-}
-
-.noted>.notes>.content {
-    color: #627283 !important;
-}
+/* Starred Pages */
 
 #savedViewHUD {
 	bottom: inherit !important;
@@ -366,6 +229,189 @@ span.contentTagText {
 	display: none !important;
 }
 
+/* /Header */
+
+/* List styling */
+/* Bullet */
+
+.bullet {
+    margin-left: 2px !important;
+}
+
+.bullet, #bulletBucket .bulletBucketBullet {
+    background-color: rgba(0,102,255,0.1) !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet.svg') !important;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 4px 4px !important;
+    height: 16px !important;
+    top: 5px !important;
+    width: 16px !important;
+}
+
+.bullet.empty {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg') !important;
+	background-size: 6px 6px !important;
+}
+
+.bullet:hover, .project.task>.name>.bullet:hover, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
+	background-color: rgba(0,102,255,0.1) !important;
+	border-radius: 100% !important;
+}
+
+.project.shared>.name>.bullet {
+	background-color: rgba(248,121,28,.24) !important;
+}
+
+.selected>.children>.project>.name>.bullet {
+	margin-top: 1px !important;
+}
+
+.selected>.children>.project .project>.name>.bullet {
+	margin-top: 2px !important;
+}
+
+#controls {
+    color: blue !important;
+}
+
+.selected>.children>.project .project>.name>#controls #expandButton {
+	top: 5px !important;
+}
+
+/* /bullets */
+
+.footer, #bottomLinks, .proPitch {
+    display: none !important;
+}
+
+.pageStar {
+    top: 2.25rem !important;
+}
+
+/* Heading */
+/* Breadcrumb */
+
+.parent>.name>.content {
+    color: #0066ff !important;
+    font-size: 14px !important;
+}
+
+.parent>.name>.parentArrow {
+    color: rgba(0,102,255,0.2) !important;
+}
+
+.project.task>.name>.bullet, .project.open>.name>.bullet, .noHalo .bullet {
+    background-color: transparent !important;
+}
+
+/* /Breadcrumb */
+
+.selected {
+    border-top: none !important;
+    margin-top: 1rem !important;
+}
+
+.selected.project {
+    padding-top: 2rem !important;
+}
+
+.selected .project>.name {
+    padding-left: 73px !important;
+}
+
+.selected.project>.name {
+    font-size: 2.5rem !important;
+		padding: 0 0 .25rem 100px !important;
+}
+
+.selected>.name>.content {
+	line-height: 3rem !important;
+}
+
+.selected>.children>.project>.children .project>.name>.content {
+    padding-top: 5px !important;
+}
+.selected.project>.children {
+	padding: 1.5rem 0 0 !important;
+}
+
+.selected>.children>.project>.children>.project {
+    font-size: 16px !important;
+}
+
+.selected>.notes>.content {
+    margin-bottom: .5rem !important;
+}
+
+.top,.right,.bottom,.left {
+    display: none !important;
+}
+
+.undo-button, .redo-button {
+    display: none !important;
+}
+
+/* Global content */
+
+a.contentLink {
+    color: #0066ff  !important;
+    text-decoration: none !important;
+}
+
+a.contentLink:hover {
+	text-decoration: none;
+}
+
+body, #documentView {
+    font-size: 16px !important;
+}
+
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title {
+    color: #1B2734 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif !important;
+    transition: all 0.1s ease !important;
+}
+
+div.content {
+    max-width: 36rem !important;
+}
+
+div.getMoreSpaceButton.hoverHand {
+    display: none !important;
+}
+
+div.page.active {
+    border-style: none !important;
+}
+
+span.contentTag {
+    color: #0066ff !important;
+}
+
+span.contentTagText {
+    text-decoration: none !important;
+}
+
+/* Notes */
+
+.noted>.notes {
+	margin: 0 0 0 1.5rem !important;
+}
+
+.noted>.notes>.content {
+	font-size: .75rem !important;
+    color: #627283 !important;
+}
+
+.selected.noted>.notes {
+	margin: 0 !important;
+}
+.selected.noted>.notes>.content {
+	font-size: .875rem !important;
+}
+
 #controlsLeft {
 	left: 2.5rem !important;
 	top: 2rem !important;
@@ -384,6 +430,7 @@ span.contentTagText {
 	margin: 0 !important;
 	white-space: nowrap;
 	width: 5rem !important;
+	border-bottom: none !important;
 }
 
 #controlsLeft a:nth-child(2n+1) {
@@ -403,7 +450,7 @@ span.contentTagText {
 	text-decoration: none !important;
 }
 
-#controlsLeft a hr {
+#controlsLeft a hr, #itemSelectionControls a hr {
 	display: none;
 }
 
@@ -423,7 +470,375 @@ span.contentTagText {
 	width: 1rem !important;
 }
 
+#itemSelectionControls>.numSelectedItems {
+	text-align: left !important;
+	background: none !important;
+	margin: 0 !important;
+	padding: .5rem 1rem !important;
+	color: #aaa;
+}
 
 
 
 
+/* ===========================
+Dialogs										*/
+
+
+
+
+.ui-dialog {
+	/*max-width: 30rem !important;*/
+	box-shadow: 0 4px 24px rgba(0,0,0,0.05) !important;
+	border-radius: .25rem !important;
+	border: 1px solid #ddd !important;
+}
+
+.ui-dialog-content {
+	padding: 1rem 2rem !important;
+}
+
+/*.ui-dialog::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(27,39,53,.14);
+}*/
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: #fafafa !important;
+	box-shadow: inset 0 0 0 1px #ddd !important;
+	border: none !important;
+	/*border-radius: .25rem !important;*/
+}
+
+.ui-widget-header {
+
+}
+
+.ui-widget-content {
+	font-size: .875rem !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	padding: 1rem 1.5rem 1rem 2rem !important;
+	border-bottom: #eee 1px solid !important;
+	background: none !important;
+}
+
+.ui-dialog-title {
+	font-size: 0.875rem !important;
+	margin: 0 !important;
+	font-weight: 500 !important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close {
+	right: 1.5rem !important;
+	width: 2rem !important;
+	height: 1.5rem !important;
+	top: 1rem !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover {
+	background: #fafafa !important;
+	border-radius: 50% !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close span {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_close.svg') !important;
+	background-position: center right !important;
+	background-size: 2rem !important;
+	width: 2rem !important;
+	height: 2rem !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	border:none !important;
+	border-top: 1px solid #eee !important;
+	margin: 1rem 0  0 !important;
+	padding: 0rem .5rem !important;
+}
+
+.ui-button .ui-button-text {
+	text-shadow: none !important;
+	font-weight: normal !important;
+	color: #1B2735 !important;
+}
+.ui-state-active.ui-button .ui-button-text {
+	color: white !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: 1rem .5rem !important;
+}
+
+.ui-button-text-only .ui-button-text {
+	padding: .5rem 1rem !important;
+}
+
+.ui-state-default.ui-state-active {
+	background: #0066ff !important;
+	box-shadow: none !important;
+	color: #fff !important;
+}
+
+.ui-widget-content.ui-corner-left {
+	border-top-left-radius: .25rem !important;
+	border-bottom-left-radius: .25rem !important;
+	border-top-right-radius: 0rem !important;
+	border-bottom-right-radius: 0rem !important;
+}
+
+.ui-widget-content.ui-corner-right {
+	border-top-right-radius: .25rem !important;
+	border-bottom-right-radius: .25rem !important;
+	border-top-left-radius: 0rem !important;
+	border-bottom-left-radius: 0rem !important;
+}
+
+/* ============================================
+Settings 																		*/
+
+#settings {
+	width: auto !important;
+	float: none !important;
+	text-align: left !important;
+	padding: 1rem 0 !important;
+}
+
+.gallerySelector {
+	margin: .5rem 1rem .5rem  0 !important;
+}
+
+#settingsRight {
+	width: auto !important;
+	float: none !important;
+	border: none !important;
+	margin-top: 1rem !important;
+	padding: 1.5rem 0 !important;
+	background: #fafafa !important;
+	border-top: 1px solid #eee !important;
+}
+
+#proSettingsBox {
+	background: none !important;
+	border: none !important;
+	padding: 0 !important;
+}
+
+.smallSettingsButton, .pro-settings-link, a.pro-settings-link {
+	font-size: 12px !important;
+	color: #6C788A !important;
+	text-decoration: none !important;
+	margin: .5rem 1rem  0 0 !important;
+}
+
+#proSettingsBox .grab-attention {
+	background: none !important;
+	border: none !important;
+}
+
+#proSettingsBox a, .pro-settings-link {
+	display: inline !important;
+	color: #6C788A !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+#proSettingsBox .grab-attention a {
+	color: #0066ff !important;
+}
+
+#settingsPopup + .ui-dialog-buttonpane {
+	display: none !important;
+}
+
+#settingsPopup .setting {
+	padding: .5rem 2rem !important;
+	border: none !important;
+}
+
+.setting input {
+	float: left !important;
+	margin-left: 0 !important;
+	margin-right: 1rem !important;
+}
+
+#accountInfo {
+	background: none !important;
+	padding: 1rem 2rem !important;
+	border: none !important;
+}
+
+#proSettingsBox {
+	padding: 1rem 2rem !important;
+}
+
+#proSettingsBox br {
+	display: none !important;
+}
+
+#proSettingsBox h2 {
+	font-weight: normal !important;
+}
+
+#proSettingsBox p {
+	margin: .25rem 0 .5rem !important;
+	color: #999;
+}
+
+.team-upgrade-button {
+	text-align: left !important;
+	margin: 2rem 0 0 !important;
+	padding: 0 !important;
+}
+
+#settingsPopup {
+	padding: 0 !important;
+}
+
+
+
+/* =================================
+Help													*/
+
+.ui-dialog:has(#helpWindow) {
+	transform: translateY(-2.5rem) !important;
+}
+
+.ui-dialog:has(#helpWindow) .ui-dialog-titlebar {
+	display: none !important;
+}
+
+#helpWindow {
+	padding: 0 !important;
+}
+
+#helpWindow .pane {
+	padding: 1rem 2rem !important;
+	max-height: 480px !important;
+}
+
+#helpWindow .pane#libraryContainer {
+	padding: 1rem !important;
+}
+
+#libraryContainer .bookName {
+	font-size: .875rem !important;
+	margin: 1rem !important;
+	font-weight: 500 !important;
+}
+
+#libraryContainer h3 {
+	display: none;
+}
+
+#bookName {
+	margin: 1rem 0 !important;
+}
+
+#bookList {
+	padding: 1rem 0 !important;
+}
+
+#helpRadio {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+}
+
+#helpRadio>span {
+	padding: 1rem 0 !important;
+	width: 33.33% !important;
+	top: 0 !important;
+	margin: 0 !important;
+	font-weight: normal !important;
+}
+
+#helpRadio>span.current {
+	border: none !important;
+	border-bottom: 1px solid #0066ff !important;
+	color: #0066ff !important;
+	top: 1px !important;
+}
+
+#libraryContainer .book {
+	margin: .25rem .125rem !important;
+	padding: .2rem .5rem !important;
+	background: #fafafa !important;
+	border: none !important;
+	box-shadow: inset 0 0 0 1px #eee !important;
+	border-radius: .25rem !important;
+	color: #6C788A !important;
+}
+
+#libraryContainer .fancyButton.active {
+	box-shadow: none !important;
+	text-shadow: none !important;
+	background: #0066ff !important;
+	border: none !important;
+	color: white !important;
+}
+
+/* =================================
+Share													*/
+
+.ui-dialog:has(#sharePopup) {
+	min-width: 35rem !important;
+}
+
+#sharePopup .buttonset.smallButtonset .ui-button-text {
+	font-size: .75rem !important;
+	padding: .25rem .5rem !important;
+	letter-spacing: .02rem !important;
+}
+
+
+#sharePopup .share_prompt #shareTypeSelector {
+	padding: 1rem 0 !important;
+}
+
+.rightOfTheBullet {
+	width: auto !important;
+	padding: .5rem 1rem !important;
+}
+
+#sharePopup .share_prompt #shareTypeSelector .shareTypeOption .shareTypeAdditionalInfo {
+	padding-top: .5rem !important;
+	border: none !important;
+}
+
+input[type="radio" i] {
+	margin: .5rem 0.5ex !important;
+}
+
+#sharePopup .share_prompt #shareTypeSelector .shareTypeOption .shareTypeOptionDescription {
+	color: #6C788A;
+}
+
+
+
+/* Baseline Grid */
+
+#grid {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/grid.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+}
+
+#gridButton {
+	z-index: 10000;
+	top: 1rem;
+	cursor: pointer;
+	text-align: center;
+}

@@ -9,10 +9,24 @@ $(document).ready(function() {
 	$('#helpButton').insertAfter($('#savedViewHUD'));
 	$('.saveButton').insertBefore($('#searchForm'));
 
+	$('#settingsRight').insertAfter('#settings');
+	$('#accountInfo').insertBefore('#proSettingsBox');
+
 	$('#searchBox').removeAttr('placeholder');
 
-
 	$('.content:empty').addClass('empty');
+
+/*
+Grid
+
+	$('body').append('<p id="gridButton">Toggle grid</p><div id="grid">Grid</div>')
+	$('#gridButton').click(function() {
+		$("#grid").Toggle();
+	});
+
+*/
+
+	// $('body').append('<div class="ui-widget-overlay" style="z-index: 1014;"></div>');
 
 	$(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
@@ -24,6 +38,15 @@ $(document).ready(function() {
     } else {
     	$('#header').removeClass("scroll");
     }
-});
+
+   /*
+   if($('.ui-dialog').css('display') == 'none') {
+		$('.ui-widget-overlay').hide();
+	} else {
+		$('.ui-widget-overlay').show();
+	}
+	*/
+
+	});
 
 });
