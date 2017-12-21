@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="4px" viewBox="0 0 18 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_24 More</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800384964">
+        <g id="extra-4pt-after-indent-copy-2" transform="translate(-987.000000, -18.000000)" fill="#1B2735">
+            <g id="Header">
+                <g id="Fadeout">
+                    <g id="ic_dots_24" transform="translate(996.000000, 20.000000) rotate(-180.000000) translate(-996.000000, -20.000000) translate(984.000000, 8.000000)">
+                        <circle id="Oval-2" cx="19" cy="12" r="2"></circle>
+                        <circle id="Oval-2-Copy" cx="12" cy="12" r="2"></circle>
+                        <circle id="Oval-2-Copy-2" cx="5" cy="12" r="2"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

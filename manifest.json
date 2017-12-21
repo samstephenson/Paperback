@@ -2,18 +2,15 @@
   "manifest_version": 2,
 
   "name": "Paperback: a minimal WorkFlowy theme",
-  "version": "0.6",
+  "short_name": "Paperback",
+  "version": "0.8.1",
   "description": "A cleaner, more colorful interface for WorkFlowy",
 
   "content_scripts": [{
-    "css": ["styles.css"],
+    "css": ["style.css"],
     "js": ["jquery-3.2.1.min.js", "content.js"],
     "matches": ["https://workflowy.com/*"]
   }],
-
-  "browser_action": {
-  		"default_icon": "icon.png"
-	},
 
   "web_accessible_resources": [
       "assets/*"

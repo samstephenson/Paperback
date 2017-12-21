@@ -1,4 +1,4 @@
-/* Backgrounds */
+	/* Backgrounds */
 body {
 	background: white !important;
 }
@@ -13,7 +13,13 @@ body {
 .open>.children {
 	padding-left: 1.5rem !important;
 	margin-left: 9px !important;
+	padding-bottom: 8px !important;
 }
+
+.childrenEnd {
+	height: 8px !important;
+}
+
 /* Correct for header */
 .selected.project>.children, .parent.project>.children {
 	padding-left: 0 !important;
@@ -22,7 +28,7 @@ body {
 
 .selected.project>.children {
 	/* Left margin optical alignment */
-	margin-left: -.3rem !important;
+	margin-left: -.35rem !important;
 }
 
 .selected .project>.name>.content {
@@ -37,7 +43,7 @@ body {
 #header {
     background: no-repeat 1rem .75rem #fff !important;
     display: flex !important;
-    font-size: 14px !important;
+    font-size: .8125rem !important;
     min-width: auto !important;
     padding: .5rem 0rem !important;
     border-bottom: none !important;
@@ -71,7 +77,7 @@ body {
 
 #searchForm {
     top: -1px !important;
-    margin: 0 1rem !important;
+    margin: 0 .75rem 0 1rem !important;
 }
 
 #searchForm.clearPrompt #searchBox {
@@ -111,7 +117,7 @@ body {
     background: none !important;
     border: none !important;
     color: #627283 !important;
-    font-size: 14px !important;
+    font-size: .8125rem !important;
     line-height: 1.2 !important;
     padding-left: 0rem !important;
     padding-right: 0 !important;
@@ -136,9 +142,9 @@ body {
 	padding: 0 !important;
 }
 
-.menu-button:hover {
-	background: #eee !important;
-	border-radius: 4px;
+.menu-button:hover, #savedViewHUDButton:hover {
+	background-color: #eee !important;
+	border-radius: 4px !important;
 }
 
 #buttonBar {
@@ -155,7 +161,7 @@ body {
 
 }
 
-.menu-options {
+.menu-options, #savedViewHUD {
     margin-top: .4rem !important;
     background: white !important;
     border: 1px #ddd solid !important;
@@ -177,8 +183,16 @@ body {
 	background: #fafafa !important;
 }
 
+.hovered > hr {
+    display: none;
+}
+
+.expandCollapseOptions hr {
+    display: none;
+}
+
 #savedViewHUDButton {
-   	margin: 0 !important;
+  margin: 0 .5rem 0 0 !important;
 	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_star.svg') !important;
 	width: 2rem !important;
 	height: 2rem !important;
@@ -210,13 +224,25 @@ body {
 	display: none !important;
 }
 
+#message {
+	color: #1b2734;
+}
+
+#site_message {
+	top: 1rem !important;
+}
+
+#message.errorMessage {
+	border-color: #ffeb3b !important;
+}
+
 /* Starred Pages */
 
 #savedViewHUD {
+	right: 1rem !important;
+	width: auto !important;
 	bottom: inherit !important;
-	top: 45px !important;
-	background-color: rgba(255,255,255,0.8) !important;
-	box-shadow: 0 1px rgba(99,114,130,0.16) !important;
+	top: 2.5rem !important;
 }
 
 .savedViewPage {
@@ -259,7 +285,7 @@ body {
     width: 16px !important;
 }
 
-.bullet.empty {
+.project.empty>.name>.bullet {
 	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg') !important;
 	background-size: 6px 6px !important;
 }
@@ -267,6 +293,16 @@ body {
 .bullet:hover, .project.task>.name>.bullet:hover, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
 	background-color: rgba(0,102,255,0.1) !important;
 	border-radius: 100% !important;
+	transform: scale(1.1) !important;
+}
+
+#moving-bullet-spacer {
+	background-color: rgba(0,102,255,0.1) !important;
+	border-radius: .25rem !important;
+}
+
+.project.moving {
+	opacity: 0.8 !important;
 }
 
 /* Shared Bullet */
@@ -289,6 +325,10 @@ body {
 
 .selected>.children>.project .project>.name>#controls #expandButton {
 	top: 5px !important;
+}
+
+#expandButton>svg>line {
+	stroke: #1B2734 !important;
 }
 
 /* /bullets */
@@ -339,6 +379,7 @@ body {
 .selected.project>.name {
     font-size: 2.5rem !important;
 		padding: 0 0 .25rem 100px !important;
+		color: #00151f !important;
 }
 
 .selected>.name>.content {
@@ -383,11 +424,10 @@ body, #documentView {
     font-size: 16px !important;
 }
 
-body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title {
-    color: #1B2734 !important;
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
+    color: #263238 !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 sans-serif !important;
-    /*transition: all 0.1s ease !important;*/
 }
 
 div.content {
@@ -447,6 +487,7 @@ span.contentTagText {
 	white-space: nowrap;
 	width: 5rem !important;
 	border-bottom: none !important;
+	font-size: 13px !important;
 }
 
 #controlsLeft a:nth-child(2n+1) {
@@ -543,7 +584,8 @@ Dialogs										*/
 }
 
 .ui-widget-content {
-	font-size: .875rem !important;
+	font-size:
+	rem !important;
 }
 
 .ui-dialog .ui-dialog-titlebar {
@@ -655,11 +697,17 @@ Settings 																		*/
 	padding: 0 !important;
 }
 
-.smallSettingsButton, .pro-settings-link, a.pro-settings-link {
+.smallSettingsButton, .pro-settings-link, a.pro-settings-link, .setting a {
 	font-size: 12px !important;
 	color: #6C788A !important;
 	text-decoration: none !important;
 	margin: .5rem 1rem  0 0 !important;
+	border-bottom: 1px solid rgba(108,120,138,0.2) !important;
+}
+
+.smallSettingsButton:hover, .pro-settings-link:hover, a.pro-settings-link:hover {
+	color: #0066ff !important;
+	border-color: rgba(0,102,255,0.2) !important;
 }
 
 #proSettingsBox .grab-attention {
@@ -674,8 +722,15 @@ Settings 																		*/
 	text-decoration: none !important;
 }
 
-#proSettingsBox .grab-attention a {
+#proSettingsBox .grab-attention a, .setting a {
 	color: #0066ff !important;
+	border-bottom: none !important;
+}
+
+.setting a {
+	display: block !important;
+	margin-top: 1rem !important;
+	border: none !important;
 }
 
 #settingsPopup + .ui-dialog-buttonpane {
@@ -808,6 +863,17 @@ Help													*/
 	border: none !important;
 	color: white !important;
 }
+
+#keyboardShortcutHelper {
+	right: 4rem !important;
+	width: auto !important;
+}
+
+#keyboardShortcutHelper .expand {
+	margin-top: 0 !important;
+	margin-left: .5rem !important;
+}
+
 
 /* =================================
 Share													*/

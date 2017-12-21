@@ -1,20 +1,23 @@
 $(document).ready(function() {
 
-	console.log("JS workingg");
-
 	$('#buttonBar').insertAfter($('.showCompletedButton'));
-	$('#savedViewHUDButton').insertAfter($('#logo'));
+	$('#savedViewHUDButton').insertAfter($('#searchForm'));
 	$('.showCompletedButton').insertBefore($('#settingsButton'));
-	$( "<div style='flex-grow: 1;'></div>").insertAfter( "#savedViewHUDButton" );
+	$( "<div style='flex-grow: 1;'></div>").insertAfter( "#logo" );
 	$('#helpButton').insertAfter($('#savedViewHUD'));
 	$('.saveButton').insertBefore($('#searchForm'));
 
 	$('#settingsRight').insertAfter('#settings');
 	$('#accountInfo').insertBefore('#proSettingsBox');
 
+	//$('pageStar').insertAfter('#savedViewHUDPageContainer');
+	//$('pageStar').wrap('<div class="page active"></div>')
+
 	$('#searchBox').removeAttr('placeholder');
 
-	$('.content:empty').addClass('empty');
+	$('link[rel="shortcut icon"]').attr('href','chrome-extension://__MSG_@@extension_id__/favicon.ico');
+
+	$('#savedViewHUD:animated').finish();
 
 /*
 Grid
