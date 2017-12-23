@@ -19,6 +19,9 @@ $(document).ready(function() {
 
 	$('#savedViewHUD:animated').finish();
 
+	$('.content').addClass("testing");
+
+
 /*
 Grid
 
