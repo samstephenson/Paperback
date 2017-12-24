@@ -21,6 +21,8 @@ $(document).ready(function() {
 
 	$('.content').addClass("testing");
 
+	// $('#logo').attr('id', 'toggler');
+
 
 /*
 Grid
