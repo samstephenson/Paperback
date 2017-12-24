@@ -9,10 +9,10 @@ body {
 
 /* Loading spinner */
 #loadingScreen {
-	background: url('chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_small.gif') white !important;
+	background: url('chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_dark_small.gif') white !important;
 	background-position:center !important;
 	background-repeat: no-repeat !important;
-	background-size: 32px !important;
+	background-size: 40px !important;
 }
 
 #loadingScreen img {
@@ -324,6 +324,7 @@ body {
 
 .project.moving {
 	opacity: 0.8 !important;
+	transition: all 0.2s ease-in-out;
 }
 
 #moveDropLine {
@@ -449,7 +450,7 @@ body, #documentView {
     font-size: 16px !important;
 }
 
-body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, .ui-widget button, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
     color: #263238 !important;
     font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 sans-serif !important;
@@ -578,17 +579,21 @@ Dialogs										*/
 
 .ui-dialog {
 	/*max-width: 30rem !important;*/
-	box-shadow: 0 0 0 100000px rgba(27,39,53,.14), 0 4px 24px rgba(0,0,0,0.05) !important;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.05) !important;
 	border-radius: .25rem !important;
-	border: 1px solid #ddd !important;
 	transition: box-shadow 0.2s ease-in-out !important;
+}
+
+.ui-dialog:not(#keyboardShortcutHelper) {
+	box-shadow: 0 0 0 100000px rgba(27,39,53,.5), 0 4px 24px rgba(0,0,0,0.05) !important;
+	border: none !important;
 }
 
 .ui-dialog-content {
 	padding: 1rem 2rem !important;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .fancyButton {
 	background: #fafafa !important;
 	box-shadow: inset 0 0 0 1px #ddd !important;
 	border: none !important;
@@ -681,6 +686,10 @@ Dialogs										*/
 	border-bottom-right-radius: .25rem !important;
 	border-top-left-radius: 0rem !important;
 	border-bottom-left-radius: 0rem !important;
+}
+
+.ui-widget-overlay {
+	opacity: 0 !important;
 }
 
 /* ============================================
