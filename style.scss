@@ -1,0 +1,976 @@
+/* Backgrounds */
+body {
+	background: white !important;
+}
+
+#backgroundImage, .page {
+		background-color: none !important;
+}
+
+/* Loading spinner */
+#loadingScreen {
+	background: url('chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_dark_small.gif') white !important;
+	background-position:center !important;
+	background-repeat: no-repeat !important;
+	background-size: 40px !important;
+}
+
+#loadingScreen img {
+	display: none !important;
+}
+
+
+/* Horizontal Spacing */
+
+.open>.children {
+	padding-left: 1.5rem !important;
+	margin-left: 9px !important;
+	padding-bottom: 8px !important;
+}
+
+.childrenEnd {
+	height: 8px !important;
+}
+
+/* Correct for header */
+.selected.project>.children, .parent.project>.children {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+
+.selected.project>.children {
+	/* Left margin optical alignment */
+	margin-left: -.35rem !important;
+}
+
+.selected .project>.name>.content {
+	line-height: 1.25rem !important;
+}
+
+/* Alerts */
+
+/* /Alerts */
+/* Header */
+
+#header {
+		background: no-repeat 1rem .75rem #fff !important;
+		display: flex !important;
+		font-size: .8125rem !important;
+		min-width: auto !important;
+		padding: .5rem 0rem !important;
+		border-bottom: none !important;
+		transition: 0.2s ease all !important;
+		height: auto !important;
+}
+
+#header.scroll {
+		box-shadow: 0 1px rgba(99,114,130,0.16) !important;
+}
+
+#logo {
+		background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_logo.svg') !important;
+		width: 2rem !important;
+		height: 2rem !important;
+		padding: 0 !important;
+		margin: 0 1rem !important;
+		background-position: center !important;
+		background-size: 2rem !important;
+}
+
+#searchBox {
+		background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg') !important;
+		background-position: top right;
+		background-repeat: no-repeat;
+		box-shadow: 0 0 0 1px rgba(99,114,130,0.16) !important;
+		border: none !important;
+		border-radius: 4px !important;
+		padding: .5rem !important;
+		width: 15rem !important;
+		transition: box-shadow 0.2s ease-out;
+}
+
+#searchForm {
+		top: -1px !important;
+		margin: 0 .75rem 0 1rem !important;
+}
+
+#searchForm.clearPrompt #searchBox {
+	background: none !important;
+	box-shadow: 0 0 0 1px rgba(99,114,130,0.16), 0 4px 8px rgba(27,39,51,0.08) !important;
+	border: none !important;
+}
+
+#searchCancel {
+	top: 2px !important;
+	right: 4px !important;
+	margin: 0 0rem 0 0 !important;
+	width: 12px !important;
+	height: 12px !important;
+}
+
+#searchCancel>svg>line {
+	stroke: #1B2734 !important;
+	stroke-width: 1.5px !important;
+}
+
+#visible {
+		background: transparent  !important;
+		margin-top: 0 !important;
+		padding-top: 0 !important;
+		width: 400px !important;
+}
+
+.saveButton {
+		width: auto !important;
+		opacity: 0.5;
+}
+
+.saveButton_saved {
+	display: none !important;
+}
+
+.saveButton, .showCompletedButton, #helpButton, .menu-button, #buttonBar {
+		background: none !important;
+		border: none !important;
+		color: #627283 !important;
+		font-size: .8125rem !important;
+		line-height: 1.2 !important;
+		padding-left: 0rem !important;
+		padding-right: 0 !important;
+		left: 0 !important;
+		margin-left: 0 !important;
+}
+
+#buttonBar {
+	margin-right: 1rem !important;
+}
+
+.showCompletedButton {
+	float: none !important;
+	text-align: left !important;
+	color: white !important;
+	padding: .5rem 1rem !important;
+	width: auto !important;
+	left: 0 !important;
+}
+
+.menu-button {
+	padding: 0 !important;
+}
+
+.menu-button:hover, #savedViewHUDButton:hover {
+	background-color: rgba(0, 102, 255, 0.05) !important;
+	border-radius: 50% !important;
+	box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.05) !important;
+	transition: box-shadow 0.1s ease-out;
+
+}
+
+#buttonBar {
+		padding: 0 !important;
+}
+
+.menu-icon {
+		width: 2rem !important;
+		height: 2rem !important;
+		opacity: 1 !important;
+		background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_menu.svg') !important;
+		background-position: 0 0 !important;
+		padding: 0 !important;
+
+}
+
+.menu-options, #savedViewHUD {
+		margin-top: .4rem !important;
+		background: white !important;
+		border: none !important;
+		box-shadow: 0 0 0 1px rgba(99,114,130,0.16), 0 8px 16px rgba(27,39,51,0.08) !important;
+		color: #1B2735 !important;
+		border-radius: .25rem !important;
+}
+
+.menu-options>#userEmail {
+	padding: .5rem 1rem !important;
+	font-size: 12px !important;
+}
+
+.menu-options>.button {
+	padding: .4rem 1rem !important;
+}
+
+.menu-options>.button:hover {
+	background: rgba(0, 102, 255, 0.05) !important;
+}
+
+.hovered > hr {
+		display: none;
+}
+
+.expandCollapseOptions hr {
+		display: none;
+}
+
+#savedViewHUDButton {
+	margin: 0 .5rem 0 0 !important;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_star.svg') !important;
+	width: 2rem !important;
+	height: 2rem !important;
+	padding: 0 !important;
+	background-position: top left !important;
+	background-size: 2rem !important;
+	border-radius: 0 !important;
+}
+
+/*#savedViewHUDButton:hover {
+		background-color: rgba(0, 102, 255, 0.1) !important;
+}*/
+
+#helpButton {
+	width: 2rem !important;
+	height: 2rem !important;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_help.svg') !important;
+	content: none;
+	padding: 0 !important;
+	background-repeat: no-repeat !important;
+	position: fixed !important;
+	bottom: 1rem;
+	left: auto !important;
+	right: 1rem;
+	z-index: 100 !important;
+}
+
+#helpButton .topBarButtonTextContainer {
+	display: none !important;
+}
+
+#message {
+	color: #1b2734;
+}
+
+#site_message {
+	top: 1rem !important;
+}
+
+#message.errorMessage {
+	border-color: #ffeb3b !important;
+}
+
+/* Starred Pages */
+
+#savedViewHUD {
+	right: 1rem !important;
+	width: auto !important;
+	bottom: inherit !important;
+	top: 2.5rem !important;
+}
+
+.savedViewPage {
+	border: 1px solid #ccc !important;
+	background-color: white !important;
+	color: inherit !important;
+}
+
+.savedViewPage.selectedSavedViewPage {
+	box-shadow: none !important;
+	border-color: #0066ff!important;
+	background-color: #fafafa !important;
+}
+
+.savedViewPageInnerContainer {
+	opacity: 1 !important;
+}
+
+.savedViewPageFader {
+	display: none !important;
+}
+
+/* /Header */
+
+/* List styling */
+/* Bullet */
+
+.bullet {
+		margin-left: 2px !important;
+}
+
+.bullet, #bulletBucket .bulletBucketBullet {
+		background-color: rgba(0,102,255,0.2) !important;
+		background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet.svg') !important;
+		background-position: 50% !important;
+		background-repeat: no-repeat !important;
+		background-size: 6px 6px !important;
+		height: 16px !important;
+		top: 5px !important;
+		width: 16px !important;
+		transition: all .1s ease-in-out;
+		opacity: 0.4;
+}
+
+.project.empty>.name>.bullet {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg') !important;
+	background-size: 6px 6px !important;
+}
+
+.bullet:hover, .project.task>.name>.bullet:hover, .project.highlighted .bullet, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
+	background-color: rgba(0,102,255,0.1) !important;
+	border-radius: 100% !important;
+	transform: scale(1.25) !important;
+	opacity: 1;
+}
+.project.highlighted .bullet:not(:hover) {
+	transform: scale(1) !important;
+}
+
+#moving-bullet-spacer {
+	background-color: rgba(0,102,255,0.1) !important;
+	border-radius: .25rem !important;
+}
+
+.project.moving {
+	opacity: 0.8 !important;
+	transition: all 0.2s ease-in-out;
+}
+
+#moveDropLine {
+	background-color: rgba(0,102,255,1) !important;
+}
+
+/* Shared Bullet */
+.project.shared>.name>.bullet {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_shared.svg') !important;
+	background-color: rgba(64,60,255,.24) !important;
+}
+
+.selected>.children>.project>.name>.bullet {
+	margin-top: 1px !important;
+}
+
+.selected>.children>.project .project>.name>.bullet {
+	margin-top: 2px !important;
+}
+
+#controls {
+		color: blue !important;
+}
+
+.selected>.children>.project .project>.name>#controls #expandButton {
+	top: 5px !important;
+}
+
+#expandButton>svg>line {
+	stroke: #1B2734 !important;
+}
+
+/* /bullets */
+
+.footer, #bottomLinks, .proPitch {
+		display: none !important;
+}
+
+.pageStar {
+		top: 2.25rem !important;
+}
+
+/* Heading */
+/* Breadcrumb */
+
+.parent>.name>.content {
+		color: #0066ff !important;
+		font-size: 14px !important;
+}
+
+.parent>.name>.parentArrow {
+		color: rgba(0,102,255,0.2) !important;
+}
+
+.project.task>.name>.bullet, .project.open>.name>.bullet, .noHalo .bullet {
+		background-color: transparent !important;
+}
+
+/* /Breadcrumb */
+
+.selected {
+		border-top: none !important;
+		margin-top: 1rem !important;
+}
+
+.selected.project {
+		padding-top: 0 !important;
+}
+
+.project.parent .project.selected{
+		padding-top: 2rem !important;
+}
+
+.selected .project>.name {
+		padding-left: 73px !important;
+}
+
+.selected.project>.name {
+		font-size: 2.5rem !important;
+		padding: 0 0 .25rem 100px !important;
+		color: #00151f !important;
+}
+
+.selected>.name>.content {
+	line-height: 3rem !important;
+}
+
+.selected>.children>.project>.children .project>.name>.content {
+		padding-top: 5px !important;
+}
+.selected.project>.children {
+	padding: 1.5rem 0 0 !important;
+}
+
+.selected>.children>.project>.children>.project {
+		font-size: 1rem !important;
+}
+
+.selected>.notes>.content {
+		margin-bottom: .5rem !important;
+}
+
+.top,.right,.bottom,.left {
+		display: none !important;
+}
+
+.undo-button, .redo-button {
+		display: none !important;
+}
+
+/* Global content */
+
+a.contentLink {
+		color: #0066ff  !important;
+		text-decoration: none !important;
+}
+
+a.contentLink:hover {
+	text-decoration: none;
+}
+
+body, #documentView {
+		font-size: 16px !important;
+}
+
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, .ui-widget button, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
+		color: #263238 !important;
+		font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif !important;
+}
+
+div.content {
+		max-width: 36rem !important;
+}
+
+div.getMoreSpaceButton.hoverHand {
+		display: none !important;
+}
+
+div.page.active {
+		border-style: none !important;
+}
+
+span.contentTag {
+		color: #0066ff !important;
+}
+
+span.contentTagText {
+		text-decoration: none !important;
+}
+
+/* Notes */
+
+.noted>.notes {
+	margin: 0 0 0 1.5rem !important;
+}
+
+.noted>.notes>.content {
+	font-size: .75rem !important;
+		color: #627283 !important;
+}
+
+.selected.noted>.notes {
+	margin: 0 !important;
+}
+.selected.noted>.notes>.content {
+	font-size: .875rem !important;
+}
+
+#controlsLeft {
+	left: 2.5rem !important;
+	top: 2rem !important;
+}
+
+#controlsLeft, #itemSelectionControls, #autocompleteBox {
+	padding: 6px 0 !important;
+	background: white !important;
+	border: 1px solid #ddd !important;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.07) !important;
+	width: auto !important;
+}
+
+#controlsLeft a, #itemSelectionControls a {
+	padding: .5rem 1rem !important;
+	margin: 0 !important;
+	white-space: nowrap;
+	width: 5rem !important;
+	border-bottom: none !important;
+	font-size: 13px !important;
+}
+
+#controlsLeft a:nth-child(2n+1) {
+	border-bottom: #eee solid 1px !important;
+}
+
+#controlsLeft a:nth-child(2n+2) {
+	padding: .5rem 1rem !important;
+}
+
+#controlsLeft a:last-child {
+	border-bottom: none !important;
+}
+
+#controlsLeft a:hover, #itemSelectionControls a:hover {
+	background: #fafafa !important;
+	text-decoration: none !important;
+}
+
+#controlsLeft a hr, #itemSelectionControls a hr {
+	display: none;
+}
+
+.selected .project #controlsLeft>.mouse-helper:before {
+	top: .5rem !important;
+	left: auto !important;
+	margin-left: -.5rem !important;
+	border-bottom: 8px solid #eee !important;
+	border-left: 8px solid transparent !important;
+	border-right: 8px solid transparent !important;
+}
+
+.selected .project #controlsLeft>.mouse-helper {
+	top: -1rem !important;
+	left: 1.2rem !important;
+	height: 1rem !important;
+	width: 1rem !important;
+}
+
+#itemSelectionControls>.numSelectedItems {
+	text-align: left !important;
+	background: none !important;
+	margin: 0 !important;
+	padding: .5rem 1rem !important;
+	color: #aaa;
+}
+
+.project.shared>.name #controlsLeft a.share, .project.addedShared>.name #controlsLeft a.share {
+	font-weight: normal !important;
+	color: #0066ff !important;
+	text-shadow: none !important;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_menu_tick.svg') !important;
+	background-position: left center !important;
+	background-repeat: no-repeat !important;
+}
+
+#autocompleteBox {
+	background: #fafafa !important;
+	padding: .25rem !important;
+}
+
+
+/* ===========================
+Dialogs										*/
+
+
+
+
+.ui-dialog {
+	/*max-width: 30rem !important;*/
+	box-shadow: 0 4px 24px rgba(0,0,0,0.05) !important;
+	border-radius: .25rem !important;
+	transition: box-shadow 0.2s ease-in-out !important;
+}
+
+.ui-dialog:not(#keyboardShortcutHelper) {
+	box-shadow: 0 0 0 100000px rgba(27,39,53,.5), 0 4px 24px rgba(0,0,0,0.05) !important;
+	border: none !important;
+}
+
+.ui-dialog-content {
+	padding: 1rem 2rem !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .fancyButton {
+	background: #fafafa !important;
+	box-shadow: inset 0 0 0 1px #ddd !important;
+	border: none !important;
+	/*border-radius: .25rem !important;*/
+}
+
+.ui-widget-header {
+
+}
+
+.ui-widget-content {
+	font-size:
+	rem !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	padding: 1rem 1.5rem 1rem 2rem !important;
+	border-bottom: #eee 1px solid !important;
+	background: none !important;
+}
+
+.ui-dialog-title {
+	font-size: 0.875rem !important;
+	margin: 0 !important;
+	font-weight: 500 !important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close {
+	right: 1.5rem !important;
+	width: 2rem !important;
+	height: 2rem !important;
+	margin: 0 !important;
+	top: .4375rem !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover {
+	background: #fafafa !important;
+	border-radius: 50% !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close span {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_close.svg') !important;
+	background-position: 0 !important;
+	background-size: 2rem !important;
+	width: 2rem !important;
+	height: 2rem !important;
+	margin: 0 !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	border:none !important;
+	border-top: 1px solid #eee !important;
+	margin: 1rem 0  0 !important;
+	padding: 0rem .5rem !important;
+}
+
+.ui-button .ui-button-text {
+	text-shadow: none !important;
+	font-weight: normal !important;
+	color: #1B2735 !important;
+}
+.ui-state-active.ui-button .ui-button-text {
+	color: white !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: 1rem .5rem !important;
+}
+
+.ui-button-text-only .ui-button-text {
+	padding: .5rem 1rem !important;
+}
+
+.ui-state-default.ui-state-active {
+	background: #0066ff !important;
+	box-shadow: none !important;
+	color: #fff !important;
+}
+
+.ui-widget-content.ui-corner-left {
+	border-top-left-radius: .25rem !important;
+	border-bottom-left-radius: .25rem !important;
+	border-top-right-radius: 0rem !important;
+	border-bottom-right-radius: 0rem !important;
+}
+
+.ui-widget-content.ui-corner-right {
+	border-top-right-radius: .25rem !important;
+	border-bottom-right-radius: .25rem !important;
+	border-top-left-radius: 0rem !important;
+	border-bottom-left-radius: 0rem !important;
+}
+
+.ui-widget-overlay {
+	opacity: 0 !important;
+}
+
+/* ============================================
+Settings 																		*/
+
+#settings {
+	width: auto !important;
+	float: none !important;
+	text-align: left !important;
+	padding: 1rem 0 !important;
+}
+
+.gallerySelector {
+	margin: .5rem 1rem .5rem  0 !important;
+}
+
+#settingsRight {
+	width: auto !important;
+	float: none !important;
+	border: none !important;
+	margin-top: 1rem !important;
+	padding: 1.5rem 0 !important;
+	background: #fafafa !important;
+	border-top: 1px solid #eee !important;
+}
+
+#proSettingsBox {
+	background: none !important;
+	border: none !important;
+	padding: 0 !important;
+}
+
+#settings .setting:nth-last-child(-n+4) {
+	display: inline-block;
+	padding-right: 0rem !important;
+}
+
+.smallSettingsButton, .pro-settings-link, a.pro-settings-link, .setting a {
+	font-size: 12px !important;
+	color: #6C788A !important;
+	text-decoration: none !important;
+	margin: .5rem 1rem  0 0 !important;
+	border-bottom: 1px solid rgba(108,120,138,0.2) !important;
+}
+
+.smallSettingsButton:hover, .pro-settings-link:hover, a.pro-settings-link:hover {
+	color: #0066ff !important;
+	border-color: rgba(0,102,255,0.2) !important;
+}
+
+#proSettingsBox .grab-attention {
+	background: none !important;
+	border: none !important;
+}
+
+#proSettingsBox a, .pro-settings-link {
+	display: inline !important;
+	color: #6C788A !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+
+#proSettingsBox .grab-attention a, .setting a {
+	color: #0066ff !important;
+	border-bottom: none !important;
+}
+
+.setting a {
+	display: block !important;
+	margin-top: 1rem !important;
+	border: none !important;
+}
+
+#settingsPopup + .ui-dialog-buttonpane {
+	display: none !important;
+}
+
+#settingsPopup .setting {
+	padding: .5rem 2rem !important;
+	border: none !important;
+}
+
+.setting input {
+	float: left !important;
+	margin-left: 0 !important;
+	margin-right: 1rem !important;
+}
+
+#accountInfo {
+	background: none !important;
+	padding: 1rem 2rem !important;
+	border: none !important;
+}
+
+#proSettingsBox {
+	padding: 1rem 2rem !important;
+}
+
+#proSettingsBox br {
+	display: none !important;
+}
+
+#proSettingsBox h2 {
+	font-weight: normal !important;
+}
+
+#proSettingsBox p {
+	margin: .25rem 0 .5rem !important;
+	color: #999;
+}
+
+.team-upgrade-button {
+	text-align: left !important;
+	margin: 2rem 0 0 !important;
+	padding: 0 !important;
+}
+
+#settingsPopup {
+	padding: 0 !important;
+}
+
+
+
+/* =================================
+Help													*/
+
+.ui-dialog:has(#helpWindow) {
+	transform: translateY(-2.5rem) !important;
+}
+
+.ui-dialog:has(#helpWindow) .ui-dialog-titlebar {
+	display: none !important;
+}
+
+#helpWindow {
+	padding: 0 !important;
+}
+
+#helpWindow .pane {
+	padding: 1rem 2rem !important;
+	max-height: 480px !important;
+}
+
+#helpWindow .pane#libraryContainer {
+	padding: 1rem !important;
+}
+
+#libraryContainer .bookName {
+	font-size: .875rem !important;
+	margin: 1rem !important;
+	font-weight: 500 !important;
+}
+
+#libraryContainer h3 {
+	display: none;
+}
+
+#bookName {
+	margin: 1rem 0 !important;
+}
+
+#bookList {
+	padding: 1rem 0 !important;
+}
+
+#helpRadio {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+}
+
+#helpRadio>span {
+	padding: 1rem 0 !important;
+	width: 33.33% !important;
+	top: 0 !important;
+	margin: 0 !important;
+	font-weight: normal !important;
+}
+
+#helpRadio>span.current {
+	border: none !important;
+	border-bottom: 1px solid #0066ff !important;
+	color: #0066ff !important;
+	top: 1px !important;
+}
+
+#libraryContainer .book {
+	margin: .25rem .125rem !important;
+	padding: .2rem .5rem !important;
+	background: #fafafa !important;
+	border: none !important;
+	box-shadow: inset 0 0 0 1px #eee !important;
+	border-radius: .25rem !important;
+	color: #6C788A !important;
+}
+
+#libraryContainer .fancyButton.active {
+	box-shadow: none !important;
+	text-shadow: none !important;
+	background: #0066ff !important;
+	border: none !important;
+	color: white !important;
+}
+
+#keyboardShortcutHelper {
+	right: 4rem !important;
+	width: auto !important;
+}
+
+#keyboardShortcutHelper .expand {
+	margin-top: 0 !important;
+	margin-left: .5rem !important;
+}
+
+
+/* =================================
+Share													*/
+
+.ui-dialog:has(#sharePopup) {
+	min-width: 35rem !important;
+}
+
+#sharePopup .buttonset.smallButtonset .ui-button-text {
+	font-size: .75rem !important;
+	padding: .25rem .5rem !important;
+	letter-spacing: .02rem !important;
+}
+
+
+#sharePopup .share_prompt #shareTypeSelector {
+	padding: 1rem 0 !important;
+}
+
+.rightOfTheBullet {
+	width: auto !important;
+	padding: .5rem 1rem !important;
+}
+
+#sharePopup .share_prompt #shareTypeSelector .shareTypeOption .shareTypeAdditionalInfo {
+	padding-top: .5rem !important;
+	border: none !important;
+}
+
+input[type="radio" i] {
+	margin: .5rem 0.5ex !important;
+}
+
+#sharePopup .share_prompt #shareTypeSelector .shareTypeOption .shareTypeOptionDescription {
+	color: #6C788A;
+}
+
+sharedEmailsTableContainer {
+	margin-left: 0 !important;
+}
+
+/* Baseline Grid */
+
+#grid {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/grid.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+}
+
+#gridButton {
+	z-index: 10000;
+	top: 1rem;
+	cursor: pointer;
+	text-align: center;
+}
