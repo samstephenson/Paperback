@@ -7,6 +7,18 @@ body {
     background-color: none !important;
 }
 
+/* Loading spinner */
+#loadingScreen {
+	background: url('chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_dark_small.gif') white !important;
+	background-position:center !important;
+	background-repeat: no-repeat !important;
+	background-size: 40px !important;
+}
+
+#loadingScreen img {
+	display: none !important;
+}
+
 
 /* Horizontal Spacing */
 
@@ -69,10 +81,12 @@ body {
   	background-image: url('chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg') !important;
   	background-position: top right;
   	background-repeat: no-repeat;
-    border: 1px solid #ddd !important;
+		box-shadow: 0 0 0 1px rgba(99,114,130,0.16) !important;
+    border: none !important;
     border-radius: 4px !important;
     padding: .5rem !important;
     width: 15rem !important;
+		transition: box-shadow 0.2s ease-out;
 }
 
 #searchForm {
@@ -81,11 +95,13 @@ body {
 }
 
 #searchForm.clearPrompt #searchBox {
-	background-image: none !important;
+	background: none !important;
+	box-shadow: 0 0 0 1px rgba(99,114,130,0.16), 0 4px 8px rgba(27,39,51,0.08) !important;
+	border: none !important;
 }
 
 #searchCancel {
-	top: 4px !important;
+	top: 2px !important;
 	right: 4px !important;
 	margin: 0 0rem 0 0 !important;
 	width: 12px !important;
@@ -143,8 +159,11 @@ body {
 }
 
 .menu-button:hover, #savedViewHUDButton:hover {
-	background-color: #eee !important;
-	border-radius: 4px !important;
+	background-color: rgba(0, 102, 255, 0.05) !important;
+	border-radius: 50% !important;
+	box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.05) !important;
+	transition: box-shadow 0.1s ease-out;
+
 }
 
 #buttonBar {
@@ -164,8 +183,8 @@ body {
 .menu-options, #savedViewHUD {
     margin-top: .4rem !important;
     background: white !important;
-    border: 1px #ddd solid !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07) !important;
+    border: none !important;
+    box-shadow: 0 0 0 1px rgba(99,114,130,0.16), 0 8px 16px rgba(27,39,51,0.08) !important;
     color: #1B2735 !important;
     border-radius: .25rem !important;
 }
@@ -180,7 +199,7 @@ body {
 }
 
 .menu-options>.button:hover {
-	background: #fafafa !important;
+	background: rgba(0, 102, 255, 0.05) !important;
 }
 
 .hovered > hr {
@@ -202,9 +221,9 @@ body {
 	border-radius: 0 !important;
 }
 
-#savedViewHUDButton:hover {
-    background-color: #eee !important;
-}
+/*#savedViewHUDButton:hover {
+    background-color: rgba(0, 102, 255, 0.1) !important;
+}*/
 
 #helpButton {
 	width: 2rem !important;
@@ -275,14 +294,16 @@ body {
 }
 
 .bullet, #bulletBucket .bulletBucketBullet {
-    background-color: rgba(0,102,255,0.1) !important;
+    background-color: rgba(0,102,255,0.2) !important;
     background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet.svg') !important;
     background-position: 50% !important;
     background-repeat: no-repeat !important;
-    background-size: 4px 4px !important;
+    background-size: 6px 6px !important;
     height: 16px !important;
     top: 5px !important;
     width: 16px !important;
+		transition: all .1s ease-in-out;
+		opacity: 0.4;
 }
 
 .project.empty>.name>.bullet {
@@ -290,10 +311,14 @@ body {
 	background-size: 6px 6px !important;
 }
 
-.bullet:hover, .project.task>.name>.bullet:hover, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
+.bullet:hover, .project.task>.name>.bullet:hover, .project.highlighted .bullet, .project.open>.name>.bullet:hover, .project.addedShared>.name>.bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared)>.name>.bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared)>.name>.bullet:hover {
 	background-color: rgba(0,102,255,0.1) !important;
 	border-radius: 100% !important;
-	transform: scale(1.1) !important;
+	transform: scale(1.25) !important;
+	opacity: 1;
+}
+.project.highlighted .bullet:not(:hover) {
+	transform: scale(1) !important;
 }
 
 #moving-bullet-spacer {
@@ -303,6 +328,11 @@ body {
 
 .project.moving {
 	opacity: 0.8 !important;
+	transition: all 0.2s ease-in-out;
+}
+
+#moveDropLine {
+	background-color: rgba(0,102,255,1) !important;
 }
 
 /* Shared Bullet */
@@ -394,7 +424,7 @@ body {
 }
 
 .selected>.children>.project>.children>.project {
-    font-size: 16px !important;
+    font-size: 1rem !important;
 }
 
 .selected>.notes>.content {
@@ -424,9 +454,9 @@ body, #documentView {
     font-size: 16px !important;
 }
 
-body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
+body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, .ui-widget button, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
     color: #263238 !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 sans-serif !important;
 }
 
@@ -555,24 +585,19 @@ Dialogs										*/
 	/*max-width: 30rem !important;*/
 	box-shadow: 0 4px 24px rgba(0,0,0,0.05) !important;
 	border-radius: .25rem !important;
-	border: 1px solid #ddd !important;
+	transition: box-shadow 0.2s ease-in-out !important;
+}
+
+.ui-dialog:not(#keyboardShortcutHelper) {
+	box-shadow: 0 0 0 100000px rgba(27,39,53,.5), 0 4px 24px rgba(0,0,0,0.05) !important;
+	border: none !important;
 }
 
 .ui-dialog-content {
 	padding: 1rem 2rem !important;
 }
 
-/*.ui-dialog::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	background: rgba(27,39,53,.14);
-}*/
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .fancyButton {
 	background: #fafafa !important;
 	box-shadow: inset 0 0 0 1px #ddd !important;
 	border: none !important;
@@ -667,6 +692,10 @@ Dialogs										*/
 	border-bottom-left-radius: 0rem !important;
 }
 
+.ui-widget-overlay {
+	opacity: 0 !important;
+}
+
 /* ============================================
 Settings 																		*/
 
@@ -695,6 +724,11 @@ Settings 																		*/
 	background: none !important;
 	border: none !important;
 	padding: 0 !important;
+}
+
+#settings .setting:nth-last-child(-n+4) {
+	display: inline-block;
+	padding-right: 0rem !important;
 }
 
 .smallSettingsButton, .pro-settings-link, a.pro-settings-link, .setting a {

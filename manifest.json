@@ -3,7 +3,7 @@
 
   "name": "Paperback: a minimal WorkFlowy theme",
   "short_name": "Paperback",
-  "version": "0.8.1",
+  "version": "0.9",
   "description": "A cleaner, more colorful interface for WorkFlowy",
 
   "content_scripts": [{
