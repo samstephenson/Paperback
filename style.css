@@ -1,10 +1,25 @@
+@charset "UTF-8";
+/* ——————VARIABLES———————— */
+/* COLOR */
+/* TYPE */
+/* EFFECTS */
+.opacity0, opacity100 {
+  transition: all 0.4s ease-in-out; }
+
+.opacity0 {
+  opacity: 0;
+  transform: translateY(4px); }
+
+.opacity100 {
+  opacity: 100; }
+
 /* Backgrounds */
-body {
-  background: white !important; }
+body.paperback {
+  background: #FFFFFF !important; }
+  body.paperback #backgroundImage, body.paperback .page {
+    background-color: none !important; }
 
-#backgroundImage, .page {
-  background-color: none !important; }
-
+/* Paperback*/
 /* Loading spinner */
 #loadingScreen {
   background: url("chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_dark_small.gif") white !important;
@@ -47,10 +62,11 @@ body {
   padding: .5rem 0rem !important;
   border-bottom: none !important;
   transition: 0.2s ease all !important;
-  height: auto !important; }
+  height: auto !important;
+  box-shadow: 0 0px #DADCDF !important; }
 
 #header.scroll {
-  box-shadow: 0 1px rgba(99, 114, 130, 0.16) !important; }
+  box-shadow: 0 1px #DADCDF !important; }
 
 #logo {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_logo.svg") !important;
@@ -61,11 +77,17 @@ body {
   background-position: center !important;
   background-size: 2rem !important; }
 
+#topHeader {
+  margin: .5rem 0;
+  color: #232934 !important;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out; }
+
 #searchBox {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg") !important;
   background-position: top right;
   background-repeat: no-repeat;
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16) !important;
+  box-shadow: 0 0 0 1px #DADCDF !important;
   border: none !important;
   border-radius: 4px !important;
   padding: .5rem !important;
@@ -73,12 +95,12 @@ body {
   transition: box-shadow 0.2s ease-out; }
 
 #searchForm {
-  top: -1px !important;
+  top: 0px !important;
   margin: 0 .75rem 0 1rem !important; }
 
 #searchForm.clearPrompt #searchBox {
   background: none !important;
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 4px 8px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 1px #DADCDF, 0 4px 8px rgba(27, 39, 51, 0.08) !important;
   border: none !important; }
 
 #searchCancel {
@@ -89,7 +111,7 @@ body {
   height: 12px !important; }
 
 #searchCancel > svg > line {
-  stroke: #1B2734 !important;
+  stroke: #232934 !important;
   stroke-width: 1.5px !important; }
 
 #visible {
@@ -108,7 +130,7 @@ body {
 .saveButton, .showCompletedButton, #helpButton, .menu-button, #buttonBar {
   background: none !important;
   border: none !important;
-  color: #627283 !important;
+  color: #6D7380 !important;
   font-size: .8125rem !important;
   line-height: 1.2 !important;
   padding-left: 0rem !important;
@@ -131,9 +153,9 @@ body {
   padding: 0 !important; }
 
 .menu-button:hover, #savedViewHUDButton:hover {
-  background-color: rgba(0, 102, 255, 0.05) !important;
+  background-color: #F4F5F7 !important;
   border-radius: 50% !important;
-  box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.05) !important;
+  box-shadow: 0 0 0 4px #F4F5F7 !important;
   transition: box-shadow 0.1s ease-out; }
 
 #buttonBar {
@@ -152,7 +174,7 @@ body {
   background: white !important;
   border: none !important;
   box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
-  color: #1B2735 !important;
+  color: #232934 !important;
   border-radius: .25rem !important; }
 
 .menu-options > #userEmail {
@@ -163,7 +185,7 @@ body {
   padding: .4rem 1rem !important; }
 
 .menu-options > .button:hover {
-  background: rgba(0, 102, 255, 0.05) !important; }
+  background: #F4F5F7 !important; }
 
 .hovered > hr {
   display: none; }
@@ -181,9 +203,6 @@ body {
   background-size: 2rem !important;
   border-radius: 0 !important; }
 
-/*#savedViewHUDButton:hover {
-		background-color: rgba(0, 102, 255, 0.1) !important;
-}*/
 #helpButton {
   width: 2rem !important;
   height: 2rem !important;
@@ -201,7 +220,7 @@ body {
   display: none !important; }
 
 #message {
-  color: #1b2734; }
+  color: #232934; }
 
 #site_message {
   top: 1rem !important; }
@@ -217,14 +236,14 @@ body {
   top: 2.5rem !important; }
 
 .savedViewPage {
-  border: 1px solid #ccc !important;
+  border: 1px solid #DADCDF !important;
   background-color: white !important;
   color: inherit !important; }
 
 .savedViewPage.selectedSavedViewPage {
   box-shadow: none !important;
-  border-color: #0066ff !important;
-  background-color: #fafafa !important; }
+  border-color: #0066FF !important;
+  background-color: #FFFFFF !important; }
 
 .savedViewPageInnerContainer {
   opacity: 1 !important; }
@@ -239,7 +258,7 @@ body {
   margin-left: 2px !important; }
 
 .bullet, #bulletBucket .bulletBucketBullet {
-  background-color: rgba(0, 102, 255, 0.2) !important;
+  background-color: #B9D5FF !important;
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bullet.svg") !important;
   background-position: 50% !important;
   background-repeat: no-repeat !important;
@@ -254,8 +273,13 @@ body {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg") !important;
   background-size: 6px 6px !important; }
 
-.bullet:hover, .project.task > .name > .bullet:hover, .project.highlighted .bullet, .project.open > .name > .bullet:hover, .project.addedShared > .name > .bullet:hover, .page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared) > .name > .bullet:hover, .page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared) > .name > .bullet:hover {
-  background-color: rgba(0, 102, 255, 0.1) !important;
+.bullet:hover,
+.project.task > .name > .bullet:hover,
+.project.open > .name > .bullet:hover,
+.project.addedShared > .name > .bullet:hover,
+.page.showCompleted .project.halfOpenSearchMatchAncestorWhenCompletedVisible:not(.shared):not(.addedShared) > .name > .bullet:hover,
+.page:not(.showCompleted) .project.halfOpenSearchMatchAncestorWhenCompletedHidden:not(.shared):not(.addedShared) > .name > .bullet:hover {
+  background-color: #E7F1FF !important;
   border-radius: 100% !important;
   transform: scale(1.25) !important;
   opacity: 1; }
@@ -264,7 +288,7 @@ body {
   transform: scale(1) !important; }
 
 #moving-bullet-spacer {
-  background-color: rgba(0, 102, 255, 0.1) !important;
+  background-color: #B9D5FF !important;
   border-radius: .25rem !important; }
 
 .project.moving {
@@ -272,7 +296,7 @@ body {
   transition: all 0.2s ease-in-out; }
 
 #moveDropLine {
-  background-color: #0066ff !important; }
+  background-color: #0066FF !important; }
 
 /* Shared Bullet */
 .project.shared > .name > .bullet {
@@ -292,7 +316,7 @@ body {
   top: 5px !important; }
 
 #expandButton > svg > line {
-  stroke: #1B2734 !important; }
+  stroke: #232934 !important; }
 
 /* /bullets */
 .footer, #bottomLinks, .proPitch {
@@ -304,11 +328,11 @@ body {
 /* Heading */
 /* Breadcrumb */
 .parent > .name > .content {
-  color: #0066ff !important;
+  color: #0066FF !important;
   font-size: 14px !important; }
 
 .parent > .name > .parentArrow {
-  color: rgba(0, 102, 255, 0.2) !important; }
+  color: #B9D5FF !important; }
 
 .project.task > .name > .bullet, .project.open > .name > .bullet, .noHalo .bullet {
   background-color: transparent !important; }
@@ -330,7 +354,7 @@ body {
 .selected.project > .name {
   font-size: 2.5rem !important;
   padding: 0 0 .25rem 100px !important;
-  color: #00151f !important; }
+  color: #0A0C0F !important; }
 
 .selected > .name > .content {
   line-height: 3rem !important; }
@@ -355,7 +379,7 @@ body {
 
 /* Global content */
 a.contentLink {
-  color: #0066ff  !important;
+  color: #0066FF !important;
   text-decoration: none !important; }
 
 a.contentLink:hover {
@@ -365,7 +389,7 @@ body, #documentView {
   font-size: 16px !important; }
 
 body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, .ui-widget button, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
-  color: #263238 !important;
+  color: #232934 !important;
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important; }
 
 div.content {
@@ -378,7 +402,7 @@ div.page.active {
   border-style: none !important; }
 
 span.contentTag {
-  color: #0066ff !important; }
+  color: #0066FF !important; }
 
 span.contentTagText {
   text-decoration: none !important; }
@@ -389,7 +413,7 @@ span.contentTagText {
 
 .noted > .notes > .content {
   font-size: .75rem !important;
-  color: #627283 !important; }
+  color: #6D7380 !important; }
 
 .selected.noted > .notes {
   margin: 0 !important; }
@@ -404,8 +428,8 @@ span.contentTagText {
 #controlsLeft, #itemSelectionControls, #autocompleteBox {
   padding: 6px 0 !important;
   background: white !important;
-  border: 1px solid #ddd !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07) !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
   width: auto !important; }
 
 #controlsLeft a, #itemSelectionControls a {
@@ -417,7 +441,7 @@ span.contentTagText {
   font-size: 13px !important; }
 
 #controlsLeft a:nth-child(2n+1) {
-  border-bottom: #eee solid 1px !important; }
+  border-bottom: #DADCDF solid 1px !important; }
 
 #controlsLeft a:nth-child(2n+2) {
   padding: .5rem 1rem !important; }
@@ -426,7 +450,7 @@ span.contentTagText {
   border-bottom: none !important; }
 
 #controlsLeft a:hover, #itemSelectionControls a:hover {
-  background: #fafafa !important;
+  background: #E7F1FF !important;
   text-decoration: none !important; }
 
 #controlsLeft a hr, #itemSelectionControls a hr {
@@ -436,7 +460,7 @@ span.contentTagText {
   top: .5rem !important;
   left: auto !important;
   margin-left: -.5rem !important;
-  border-bottom: 8px solid #eee !important;
+  border-bottom: 8px solid #DADCDF !important;
   border-left: 8px solid transparent !important;
   border-right: 8px solid transparent !important; }
 
@@ -451,38 +475,38 @@ span.contentTagText {
   background: none !important;
   margin: 0 !important;
   padding: .5rem 1rem !important;
-  color: #aaa; }
+  color: #6D7380; }
 
 .project.shared > .name #controlsLeft a.share, .project.addedShared > .name #controlsLeft a.share {
   font-weight: normal !important;
-  color: #0066ff !important;
+  color: #0066FF !important;
   text-shadow: none !important;
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_menu_tick.svg") !important;
   background-position: left center !important;
   background-repeat: no-repeat !important; }
 
 #autocompleteBox {
-  background: #fafafa !important;
+  background: #F4F5F7 !important;
   padding: .25rem !important; }
 
 /* ===========================
 Dialogs										*/
 .ui-dialog {
   /*max-width: 30rem !important;*/
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05) !important;
+  /*box-shadow: $shadowPopover !important;*/
   border-radius: .25rem !important;
   transition: box-shadow 0.2s ease-in-out !important; }
 
 .ui-dialog:not(#keyboardShortcutHelper) {
-  box-shadow: 0 0 0 100000px rgba(27, 39, 53, 0.5), 0 4px 24px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 0 100000px rgba(27, 39, 53, 0.5), 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
   border: none !important; }
 
 .ui-dialog-content {
   padding: 1rem 2rem !important; }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .fancyButton {
-  background: #fafafa !important;
-  box-shadow: inset 0 0 0 1px #ddd !important;
+  background: #F4F5F7 !important;
+  box-shadow: inset 0 0 0 1px #DADCDF !important;
   border: none !important;
   /*border-radius: .25rem !important;*/ }
 
@@ -491,7 +515,7 @@ Dialogs										*/
 
 .ui-dialog .ui-dialog-titlebar {
   padding: 1rem 1.5rem 1rem 2rem !important;
-  border-bottom: #eee 1px solid !important;
+  border-bottom: #DADCDF 1px solid !important;
   background: none !important; }
 
 .ui-dialog-title {
@@ -507,7 +531,7 @@ Dialogs										*/
   top: .4375rem !important; }
 
 .ui-dialog .ui-dialog-titlebar-close:hover {
-  background: #fafafa !important;
+  background: #F4F5F7 !important;
   border-radius: 50% !important; }
 
 .ui-dialog .ui-dialog-titlebar-close span {
@@ -520,14 +544,14 @@ Dialogs										*/
 
 .ui-dialog .ui-dialog-buttonpane {
   border: none !important;
-  border-top: 1px solid #eee !important;
+  border-top: 1px solid #DADCDF !important;
   margin: 1rem 0  0 !important;
   padding: 0rem .5rem !important; }
 
 .ui-button .ui-button-text {
   text-shadow: none !important;
   font-weight: normal !important;
-  color: #1B2735 !important; }
+  color: #232934 !important; }
 
 .ui-state-active.ui-button .ui-button-text {
   color: white !important; }
@@ -539,9 +563,9 @@ Dialogs										*/
   padding: .5rem 1rem !important; }
 
 .ui-state-default.ui-state-active {
-  background: #0066ff !important;
+  background: #0066FF !important;
   box-shadow: none !important;
-  color: #fff !important; }
+  color: white !important; }
 
 .ui-widget-content.ui-corner-left {
   border-top-left-radius: .25rem !important;
@@ -575,8 +599,8 @@ Settings 																		*/
   border: none !important;
   margin-top: 1rem !important;
   padding: 1.5rem 0 !important;
-  background: #fafafa !important;
-  border-top: 1px solid #eee !important; }
+  background: #F4F5F7 !important;
+  border-top: 1px solid #DADCDF !important; }
 
 #proSettingsBox {
   background: none !important;
@@ -589,14 +613,14 @@ Settings 																		*/
 
 .smallSettingsButton, .pro-settings-link, a.pro-settings-link, .setting a {
   font-size: 12px !important;
-  color: #6C788A !important;
+  color: #6D7380 !important;
   text-decoration: none !important;
   margin: .5rem 1rem  0 0 !important;
   border-bottom: 1px solid rgba(108, 120, 138, 0.2) !important; }
 
 .smallSettingsButton:hover, .pro-settings-link:hover, a.pro-settings-link:hover {
-  color: #0066ff !important;
-  border-color: rgba(0, 102, 255, 0.2) !important; }
+  color: #0066FF !important;
+  border-color: #B9D5FF !important; }
 
 #proSettingsBox .grab-attention {
   background: none !important;
@@ -604,12 +628,12 @@ Settings 																		*/
 
 #proSettingsBox a, .pro-settings-link {
   display: inline !important;
-  color: #6C788A !important;
+  color: #6D7380 !important;
   font-weight: normal !important;
   text-decoration: none !important; }
 
 #proSettingsBox .grab-attention a, .setting a {
-  color: #0066ff !important;
+  color: #0066FF !important;
   border-bottom: none !important; }
 
 .setting a {
@@ -645,7 +669,7 @@ Settings 																		*/
 
 #proSettingsBox p {
   margin: .25rem 0 .5rem !important;
-  color: #999; }
+  color: #6D7380; }
 
 .team-upgrade-button {
   text-align: left !important;
@@ -690,7 +714,7 @@ Help													*/
 #helpRadio {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #DADCDF; }
 
 #helpRadio > span {
   padding: 1rem 0 !important;
@@ -701,23 +725,23 @@ Help													*/
 
 #helpRadio > span.current {
   border: none !important;
-  border-bottom: 1px solid #0066ff !important;
-  color: #0066ff !important;
+  border-bottom: 1px solid #0066FF !important;
+  color: #0066FF !important;
   top: 1px !important; }
 
 #libraryContainer .book {
   margin: .25rem .125rem !important;
-  padding: .2rem .5rem !important;
-  background: #fafafa !important;
+  padding: .25rem .5rem 0.3rem !important;
+  background: #F4F5F7 !important;
   border: none !important;
-  box-shadow: inset 0 0 0 1px #eee !important;
+  box-shadow: inset 0 0 0 1px #DADCDF !important;
   border-radius: .25rem !important;
-  color: #6C788A !important; }
+  color: #6D7380 !important; }
 
 #libraryContainer .fancyButton.active {
   box-shadow: none !important;
   text-shadow: none !important;
-  background: #0066ff !important;
+  background: #0066FF !important;
   border: none !important;
   color: white !important; }
 
@@ -754,7 +778,7 @@ input[type="radio" i] {
   margin: .5rem 0.5ex !important; }
 
 #sharePopup .share_prompt #shareTypeSelector .shareTypeOption .shareTypeOptionDescription {
-  color: #6C788A; }
+  color: #6D7380; }
 
 sharedEmailsTableContainer {
   margin-left: 0 !important; }
@@ -776,5 +800,7 @@ sharedEmailsTableContainer {
   top: 1rem;
   cursor: pointer;
   text-align: center; }
+
+/* }  CLOSE BODY.PAPERBACK */
 
 /*# sourceMappingURL=style.css.map */

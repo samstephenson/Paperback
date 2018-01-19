@@ -1,0 +1,780 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"color",
+				"colorTextSecondary"
+			],
+			[
+				"colr",
+				"colorTextSecondary"
+			],
+			[
+				"col",
+				"colorTextSecondary"
+			],
+			[
+				"colorbg",
+				"colorBGLight"
+			],
+			[
+				"colo",
+				"colorTextBody"
+			],
+			[
+				"coll",
+				"colorInteracticeSuperLight"
+			],
+			[
+				"te",
+				"colorTextBody"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"gri",
+				"gridButton"
+			],
+			[
+				"backg",
+				"background-repeat"
+			],
+			[
+				"1b",
+				"1B2735"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"tran",
+				"translateY()"
+			],
+			[
+				"FONT",
+				"font-size"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"backgroun",
+				"background"
+			],
+			[
+				"INSER",
+				"insertBefore"
+			],
+			[
+				"inser",
+				"insertAfter"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"border-rad",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"favicon",
+				"faviconURL"
+			],
+			[
+				"marig",
+				"margin-bottom"
+			],
+			[
+				"backgorun",
+				"background-image"
+			],
+			[
+				"tra",
+				"translateY()"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"space",
+				"space-between"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"backro",
+				"background"
+			],
+			[
+				"border-",
+				"border-top-right-radius"
+			],
+			[
+				"pading",
+				"padding-right"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"border",
+				"border-bottom: "
+			],
+			[
+				"con",
+				"colorIndexNext"
+			],
+			[
+				"co",
+				"colorIndex"
+			],
+			[
+				"comm",
+				"commitment"
+			],
+			[
+				"bg",
+				"bgCurrent"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"rand",
+				"randomiseActiveIndex"
+			],
+			[
+				"crads",
+				"cardsSeen"
+			],
+			[
+				"ran",
+				"randomiseActiveIndex"
+			],
+			[
+				"cards",
+				"cardsSeen"
+			],
+			[
+				"get",
+				"getRandomIntInclusive"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"body",
+				"body-color"
+			],
+			[
+				"fle",
+				"flex-flow: "
+			],
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"link",
+				"linkColor"
+			],
+			[
+				"min",
+				"min-width: "
+			],
+			[
+				"check",
+				"checkButtons"
+			],
+			[
+				"repea",
+				"no-repeat"
+			],
+			[
+				"scroll",
+				"scrollLeft"
+			],
+			[
+				"pro",
+				"projectsWidth"
+			],
+			[
+				"scro",
+				"scrollLeft"
+			],
+			[
+				"hei",
+				"hideRight"
+			],
+			[
+				"hide",
+				"hideRight"
+			],
+			[
+				"po",
+				"projectWrapper"
+			],
+			[
+				"animate",
+				"animateScroller"
+			],
+			[
+				"s",
+				"scrollPosition"
+			],
+			[
+				"type",
+				"typeUI"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"t",
+				"target\tAttr"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"inlne",
+				"inline-block"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"slide",
+				"slideIndex"
+			],
+			[
+				"currnet",
+				"currentSlide"
+			],
+			[
+				"pre",
+				"preValue"
+			],
+			[
+				"currn",
+				"currentSlide"
+			],
+			[
+				"current",
+				"currentSlide"
+			],
+			[
+				"end",
+				"endValue"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"slides",
+				"slideItems"
+			],
+			[
+				"tabW",
+				"tabWidths"
+			],
+			[
+				"tabWi",
+				"tabWidthRunningSum"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"Main",
+				"main-container"
+			],
+			[
+				"ini",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 180.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sc",
+				"Schemr: List all schemes"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sch",
+				"Schemr: List all schemes"
+			],
+			[
+				"list",
+				"Package Control: Install Package"
+			],
+			[
+				"UI",
+				"UI: Select Color Scheme"
+			],
+			[
+				"schemr: se",
+				"Schemr: List all schemes"
+			],
+			[
+				"sche",
+				"Schemr: Random scheme"
+			],
+			[
+				"user ",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 155.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/samstephenson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/samstephenson/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/oiaejidbmkiecgbjeifoejpgmdaleoha/2.2_0/manifest.json",
+		"/Users/samstephenson/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/samstephenson/Documents/Paperback [dev]/style.css",
+		"/Users/samstephenson/Documents/Paperback [dev]/styles.css",
+		"/Users/samstephenson/Documents/Paperback [dev]/content.js",
+		"/Users/samstephenson/Documents/Paperback [dev]/manifest.json",
+		"/Users/samstephenson/Downloads/gmail.svg",
+		"/Users/samstephenson/Documents/Paperback/manifest.json",
+		"/Users/samstephenson/Documents/Paperback [design]/Website/style.css",
+		"/Users/samstephenson/Documents/sams website/index.html",
+		"/Users/samstephenson/Documents/index.html",
+		"/Users/samstephenson/Documents/Paperback/styles.css",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/manifest.json",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/styles.css",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/content.js",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/Website/index.html",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/Website/style.css",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/popup.html",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/Workflowy_Chrome_Extension/Website/reset.css",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-23-MoneyApp.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2017-02-20-reali.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/index.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/index.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/about.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/aboutWork.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/homepageStuff.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_type.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_base.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/robots.txt",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_layout.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_message.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_masthead.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/masthead.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/head.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/footer.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/login.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_layouts/portfolio.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/gemfile.ruby",
+		"/Users/samstephenson/Documents/002_Client_Work/023_Workflowy/cssForJesse.css",
+		"/Users/samstephenson/Documents/012_ChangeKit/index.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2017-02-21-huey.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/about.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/change/js/main.js",
+		"/Users/samstephenson/Documents/samstephenson.github.io/change/css/main.css",
+		"/Users/samstephenson/Documents/samstephenson.github.io/change/brainstorm.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/change/index.html",
+		"/Users/samstephenson/Documents/012_ChangeKit/css/main.css",
+		"/Users/samstephenson/Documents/012_ChangeKit/js/main.js",
+		"/Users/samstephenson/Documents/002_Client_Work/Motivation_Hacking/Emails/yes_no_test_01.html",
+		"/Users/samstephenson/Documents/002_Client_Work/Motivation_Hacking/Emails/yes_no_test_01",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-20-Past-and-Present.md",
+		"/Users/samstephenson/Documents/0025 NDD/Trusona/Rings/index.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-22-Change.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_sass/_masthead.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/chunking.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/choice-overload.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/trigger.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/status-quo.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/recciprocity.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/post-completion.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/pluralistic-ignorance.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/messenger.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/feedback.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/errors.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/defaults.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/commitments.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_includes/footer.html",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_includes/masthead.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/assessment.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/seesaw/index.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/seesaw/css/styles.css",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/index.html",
+		"/Users/samstephenson/Documents/001 Graphics/004 seesaw/Website/css/styles.css",
+		"/Users/samstephenson/Documents/001 Graphics/004 seesaw/Website/index.html",
+		"/Users/samstephenson/Documents/001 Graphics/004 seesaw/Website/js/scripts.js",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_sass/_variables.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_layouts/page.html",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_layouts/default.html",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_layouts/post.html",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_sass/_base.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_sass/_type.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_sass/_layout.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/use.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/CNAME",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_includes/head.html",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_config.yml",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/scripts/functions.js",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_sass/_code.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/styles.scss",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_principles/testprinciple.md",
+		"/Users/samstephenson/Documents/001 Graphics/005 Behaviour Change Toolkit/actioncards.io/_posts/2014-01-01-example-content.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_config.yml",
+		"/Users/samstephenson/Documents/001 Graphics/008 Transitions/Publication/Logos/ia logo.svg",
+		"/Users/samstephenson/Documents/001 Graphics/008 Transitions/Publication/Logos/NDD.svg",
+		"/Users/samstephenson/Documents/001 Graphics/008 Transitions/Publication/Logos/ia logo.vsg",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-17-Amber-Business.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-18-Jack-Beck.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-21-Bitcoin.md",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.2.9_0/media/versioned/static/fonts/default.css",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.2.9_0/media/css/aristo/jquery-ui-1.8.7.custom.css",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.2.9_0/media/css/reset.css",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.2.9_0/manifest.json",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.2.9_0/media/css/print.css",
+		"/Users/samstephenson/Library/Application Support/Google/Chrome/Default/Extensions/koegeopamaoljbmhnfjbclbocehhgmkm/1.2.9_0/document_view.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/about.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-22-MoneyApp.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_layouts/home.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/projectnav.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/nav.js",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_layouts/default.html",
+		"/Users/samstephenson/Desktop/fb-sleep-stats/config/default.json",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-21-Past-and-Present.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_syntax.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_sass/_posts.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-19-Hurley-Classic.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/work/_posts/2016-01-20-Bitcoin.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_posts/2016-01-22-MoneyApp.md",
+		"/Users/samstephenson/Documents/samstephenson.github.io/2016/_layouts/default.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_layouts/page.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/_includes/analytics.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/2015/index.html",
+		"/Users/samstephenson/Documents/samstephenson.github.io/CNAME",
+		"/Users/samstephenson/Documents/samstephenson.github.io/2016/_sass/_base.scss",
+		"/Users/samstephenson/Documents/samstephenson.github.io/2016/_config.yml",
+		"/Users/samstephenson/Downloads/markdownID.jsx",
+		"/Users/samstephenson/Documents/002 Client Work/023 Workflowy/Workflowy export.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "style.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/0041 SamStephenson.com 2015/Site 1.0/work.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
