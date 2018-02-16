@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 
 	        if(headerVisible === false && $('.mainTreeRoot').is('.parent') ) {
-	        	$(topHeader).appendTo('#topHeader').wrap("<div></div>");
+	        	$(topHeader).appendTo('#topHeader').wrap("<div class='topHeaderTitle'></div>");
 	        	$('#topHeader').removeClass('opacity0').addClass('opacity100');
 	        	headerVisible = true;
 	       	}

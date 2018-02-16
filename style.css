@@ -1,5 +1,55 @@
 @charset "UTF-8";
 /* ——————VARIABLES———————— */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Regular.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Bold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-BoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
 /* COLOR */
 /* TYPE */
 /* EFFECTS */
@@ -63,10 +113,10 @@ body.paperback {
   border-bottom: none !important;
   transition: 0.2s ease all !important;
   height: auto !important;
-  box-shadow: 0 0px #DADCDF !important; }
+  box-shadow: 0 0px #eee !important; }
 
 #header.scroll {
-  box-shadow: 0 1px #DADCDF !important; }
+  box-shadow: 0 1px #eee !important; }
 
 #logo {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_logo.svg") !important;
@@ -83,6 +133,16 @@ body.paperback {
   font-size: 16px;
   transition: all 0.2s ease-in-out; }
 
+#topHeader .topHeaderTitle {
+  font-weight: 600 !important;
+  width: 100%;
+  max-width: 24rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: .2rem;
+  margin-bottom: -2rem; }
+
 #searchBox {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg") !important;
   background-position: top right;
@@ -91,8 +151,8 @@ body.paperback {
   border: none !important;
   border-radius: 4px !important;
   padding: .5rem !important;
-  width: 15rem !important;
-  transition: box-shadow 0.2s ease-out; }
+  width: 12rem !important;
+  transition: width 0.2s ease-out, box-shadow 0.2s ease-out; }
 
 #searchForm {
   top: 0px !important;
@@ -101,9 +161,11 @@ body.paperback {
 #searchForm.clearPrompt #searchBox {
   background: none !important;
   box-shadow: 0 0 0 1px #DADCDF, 0 4px 8px rgba(27, 39, 51, 0.08) !important;
-  border: none !important; }
+  border: none !important;
+  width: 16rem !important; }
 
-#searchCancel {
+#searchForm.clearPrompt #searchCancel {
+  display: inline-block !important;
   top: 2px !important;
   right: 4px !important;
   margin: 0 0rem 0 0 !important;
@@ -131,7 +193,7 @@ body.paperback {
   background: none !important;
   border: none !important;
   color: #6D7380 !important;
-  font-size: .8125rem !important;
+  font-size: 14px !important;
   line-height: 1.2 !important;
   padding-left: 0rem !important;
   padding-right: 0 !important;
@@ -419,7 +481,7 @@ span.contentTagText {
   margin: 0 !important; }
 
 .selected.noted > .notes > .content {
-  font-size: .875rem !important; }
+  font-size: 14px !important; }
 
 #controlsLeft {
   left: 2.5rem !important;
@@ -438,19 +500,16 @@ span.contentTagText {
   white-space: nowrap;
   width: 5rem !important;
   border-bottom: none !important;
-  font-size: 13px !important; }
+  font-size: 14px !important; }
 
-#controlsLeft a:nth-child(2n+1) {
-  border-bottom: #DADCDF solid 1px !important; }
-
-#controlsLeft a:nth-child(2n+2) {
-  padding: .5rem 1rem !important; }
+#controlsLeft > .duplicate, #controlsLeft > .export, #controlsLeft > .expandCollapseOptions {
+  border-bottom: #eee solid 1px !important; }
 
 #controlsLeft a:last-child {
   border-bottom: none !important; }
 
 #controlsLeft a:hover, #itemSelectionControls a:hover {
-  background: #E7F1FF !important;
+  background: #F4F5F7 !important;
   text-decoration: none !important; }
 
 #controlsLeft a hr, #itemSelectionControls a hr {
@@ -460,7 +519,7 @@ span.contentTagText {
   top: .5rem !important;
   left: auto !important;
   margin-left: -.5rem !important;
-  border-bottom: 8px solid #DADCDF !important;
+  border-bottom: 8px solid #eee !important;
   border-left: 8px solid transparent !important;
   border-right: 8px solid transparent !important; }
 
@@ -498,7 +557,7 @@ Dialogs										*/
   transition: box-shadow 0.2s ease-in-out !important; }
 
 .ui-dialog:not(#keyboardShortcutHelper) {
-  box-shadow: 0 0 0 100000px rgba(27, 39, 53, 0.5), 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
   border: none !important; }
 
 .ui-dialog-content {
@@ -511,15 +570,15 @@ Dialogs										*/
   /*border-radius: .25rem !important;*/ }
 
 .ui-widget-content {
-  font-size: rem !important; }
+  font-size: UIFontSize !important; }
 
 .ui-dialog .ui-dialog-titlebar {
   padding: 1rem 1.5rem 1rem 2rem !important;
-  border-bottom: #DADCDF 1px solid !important;
+  border-bottom: #eee 1px solid !important;
   background: none !important; }
 
 .ui-dialog-title {
-  font-size: 0.875rem !important;
+  font-size: 14px !important;
   margin: 0 !important;
   font-weight: 500 !important; }
 
@@ -600,7 +659,7 @@ Settings 																		*/
   margin-top: 1rem !important;
   padding: 1.5rem 0 !important;
   background: #F4F5F7 !important;
-  border-top: 1px solid #DADCDF !important; }
+  border-top: 1px solid #eee !important; }
 
 #proSettingsBox {
   background: none !important;
@@ -620,7 +679,7 @@ Settings 																		*/
 
 .smallSettingsButton:hover, .pro-settings-link:hover, a.pro-settings-link:hover {
   color: #0066FF !important;
-  border-color: #B9D5FF !important; }
+  border: none !important; }
 
 #proSettingsBox .grab-attention {
   background: none !important;
@@ -698,7 +757,7 @@ Help													*/
   padding: 1rem !important; }
 
 #libraryContainer .bookName {
-  font-size: .875rem !important;
+  font-size: 14px !important;
   margin: 1rem !important;
   font-weight: 500 !important; }
 
