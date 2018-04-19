@@ -3,7 +3,7 @@
 
   "name": "Paperback: a minimal WorkFlowy theme",
   "short_name": "Paperback",
-  "version": "10",
+  "version": "11",
   "description": "A minimal theme for WorkFlowy on the web.",
 
   "content_scripts": [{

@@ -68,6 +68,8 @@ body.paperback {
   background: #FFFFFF !important; }
   body.paperback #backgroundImage, body.paperback .page {
     background-color: none !important; }
+  body.paperback ::-webkit-scrollbar {
+    width: .2rem !important; }
 
 /* Paperback*/
 /* Loading spinner */
@@ -295,12 +297,26 @@ body.paperback {
   right: 1rem !important;
   width: auto !important;
   bottom: inherit !important;
-  top: 2.5rem !important; }
+  top: 2.5rem !important;
+  height: auto !important;
+  min-height: 12rem !important;
+  max-height: 80vh;
+  overflow-y: scroll !important;
+  max-width: 39rem !important;
+  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important; }
+
+#savedViewHUDPageContainer {
+  white-space: normal !important;
+  padding: 1rem !important; }
 
 .savedViewPage {
   border: 1px solid #DADCDF !important;
   background-color: white !important;
-  color: inherit !important; }
+  color: inherit !important;
+  width: 6rem !important;
+  height: 8rem !important;
+  margin: 0.5rem !important;
+  padding: 1rem !important; }
 
 .savedViewPage.selectedSavedViewPage {
   box-shadow: none !important;
