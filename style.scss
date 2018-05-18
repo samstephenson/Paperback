@@ -1,81 +1,30 @@
 /* ——————VARIABLES———————— */
 
-// FONTS
-
-@charset "UTF-8";
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Regular.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Bold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-BoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
 /* COLOR */
 $colorBG: #FFFFFF;
 $colorBGLight: #F4F5F7;
-$colorTextBody: #232934;
-$colorTextSecondary: #6D7380;
-$colorTextHeadline: #0A0C0F;
-$colorInteractivePrimary: #0066FF;
+$colorTextBody: #0e0f11;
+$colorTextSecondary: #6F7C8B;
+$colorTextHeadline: #0e0f11;
+$colorInteractivePrimary: #1C72FF;
 $colorInteractiveLight: #B9D5FF;
 $colorInteractiveSuperLight: #E7F1FF;
 $colorOutlines: #eee;
 $colorOutlinesDark: #DADCDF;
+$colorToolbar: #1B2735;
 
 /* TYPE */
 $baseFontSize: 16px;
 $UIFontSize: 14px;
-$fontStack: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+$fontStack: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 sans-serif;
 
 /* EFFECTS */
 $shadowDeep: 0 4px 8px rgba(27,39,51,0.08);
-$shadowPopover: 0 0 0 1px rgba(99,114,130,0.16), 0 8px 16px rgba(27,39,51,0.08);
+$shadowPopover: 0 0 0 0.5px rgba(99,114,130,0.16), 0 8px 16px rgba(27,39,51,0.08);
+$borderRadius: .5rem;
 
+$transitionSubtle: all 0.15s ease-out;
 
 .opacity0, opacity100 {
 	transition: all 0.4s ease-in-out;
@@ -122,7 +71,7 @@ body.paperback {
 	.open>.children {
 		padding-left: 1.5rem !important;
 		margin-left: 9px !important;
-		padding-bottom: 8px !important;
+		padding-bottom: 9px !important;
 	}
 
 	.childrenEnd {
@@ -142,6 +91,14 @@ body.paperback {
 
 	.selected .project>.name>.content {
 		line-height: 1.25rem !important;
+	}
+
+	.selected>.children>.project>.name {
+		// margin-left: 0 !important;
+	}
+
+	.selected.project {
+		max-width: 40rem !important;
 	}
 
 	/* Alerts */
@@ -183,7 +140,7 @@ body.paperback {
 	}
 
 	#topHeader .topHeaderTitle {
-		font-weight: 600 !important;
+		font-weight: normal !important;
 		width: 100%;
 		max-width: 24rem;
 	  white-space: nowrap;
@@ -191,6 +148,7 @@ body.paperback {
 	  text-overflow: ellipsis;
 	  padding-bottom: .2rem;
 	  margin-bottom: -2rem;
+	  color: $colorToolbar !important;
 	}
 
 	#searchBox {
@@ -212,7 +170,6 @@ body.paperback {
 
 	#searchForm.clearPrompt #searchBox {
 		background: none !important;
-		box-shadow: 0 0 0 1px $colorOutlinesDark, $shadowDeep !important;
 		border: none !important;
 		width: 16rem !important;
 	}
@@ -423,7 +380,7 @@ body.paperback {
 	}
 
 	.bullet, #bulletBucket .bulletBucketBullet {
-			background-color: $colorInteractiveLight !important;
+			background-color: $colorInteractiveSuperLight !important;
 			background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet.svg') !important;
 			background-position: 50% !important;
 			background-repeat: no-repeat !important;
@@ -432,7 +389,7 @@ body.paperback {
 			top: 5px !important;
 			width: 16px !important;
 			transition: all .1s ease-in-out;
-			opacity: 0.4;
+			opacity: 1;
 	}
 
 	.project.empty>.name>.bullet {
@@ -473,7 +430,7 @@ body.paperback {
 	/* Shared Bullet */
 	.project.shared>.name>.bullet {
 		background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bullet_shared.svg') !important;
-		background-color: rgba(64,60,255,.24) !important;
+		background-color: rgba(64,60,255,.15) !important;
 	}
 
 	.selected>.children>.project>.name>.bullet {
@@ -510,12 +467,13 @@ body.paperback {
 	/* Breadcrumb */
 
 	.parent>.name>.content {
-			color: $colorInteractivePrimary !important;
+			color: $colorTextSecondary !important;
 			font-size: $UIFontSize !important;
 	}
 
 	.parent>.name>.parentArrow {
-			color: $colorInteractiveLight !important;
+			color: $colorTextSecondary !important;
+			opacity: 0.4 !important;
 	}
 
 	.project.task>.name>.bullet, .project.open>.name>.bullet, .noHalo .bullet {
@@ -539,16 +497,17 @@ body.paperback {
 
 	.selected .project>.name {
 			padding-left: 73px !important;
+	//		padding-bottom: 3px !important;
 	}
 
 	.selected.project>.name {
-			font-size: 2.5rem !important;
+			font-size: 2rem !important;
 			padding: 0 0 .25rem 100px !important;
 			color: $colorTextHeadline !important;
 	}
 
 	.selected>.name>.content {
-		line-height: 3rem !important;
+		line-height: 1.2 !important;
 	}
 
 	.selected>.children>.project>.children .project>.name>.content {
@@ -559,10 +518,11 @@ body.paperback {
 	}
 
 	.selected>.children>.project>.children>.project {
-			font-size: 1rem !important;
+			font-size: $baseFontSize !important;
 	}
 
 	.selected>.notes>.content {
+			font-family: $fontStack !important;
 			margin-bottom: .5rem !important;
 	}
 
@@ -577,12 +537,20 @@ body.paperback {
 	/* Global content */
 
 	a.contentLink {
-			color: $colorInteractivePrimary !important;
+			color: $colorTextSecondary !important;
 			text-decoration: none !important;
+			background-image: linear-gradient(to bottom, rgba(109,115,128,0.2) 33%, transparent 33%);
+		  background-position: 0 1.1em;
+		  background-repeat: repeat-x;
+		  background-size: 1px 4px;
 	}
 
 	a.contentLink:hover {
+		color: $colorInteractivePrimary !important;
 		text-decoration: none;
+		background-image: linear-gradient(to bottom, rgba(109,115,128,0) 33%, transparent 33%);
+		background-position: 0 1rem;
+		transition: $transitionSubtle;
 	}
 
 	body, #documentView {
@@ -595,7 +563,7 @@ body.paperback {
 	}
 
 	div.content {
-			max-width: 36rem !important;
+			// max-width: 36rem !important;
 	}
 
 	div.getMoreSpaceButton.hoverHand {
@@ -606,12 +574,23 @@ body.paperback {
 			border-style: none !important;
 	}
 
-	span.contentTag {
+	span.contentTag, {
 			color: $colorInteractivePrimary !important;
+			background: $colorBGLight;
+			padding: .125rem .25rem !important;
+			border-radius: $borderRadius !important;
+			margin: 0 .125rem !important;
+			transition: $transitionSubtle;
 	}
 
 	span.contentTagText {
 			text-decoration: none !important;
+	}
+
+	.content .contentMatch {
+		background: $colorInteractiveSuperLight !important;
+		border-radius: $borderRadius !important;
+		transition: $transitionSubtle;
 	}
 
 	/* Notes */
@@ -621,7 +600,7 @@ body.paperback {
 	}
 
 	.noted>.notes>.content {
-		font-size: .75rem !important;
+		font-size: $UIFontSize !important;
 			color: $colorTextSecondary !important;
 	}
 
@@ -744,11 +723,11 @@ body.paperback {
 	}
 
 	.ui-widget-content {
-		font-size: UIFontSize !important;
+		font-size: $UIFontSize !important;
 	}
 
 	.ui-dialog .ui-dialog-titlebar {
-		padding: 1rem 1.5rem 1rem 2rem !important;
+		padding: 1.1rem 1.5rem 1rem 2rem !important;
 		border-bottom: $colorOutlines 1px solid !important;
 		background: none !important;
 	}
@@ -765,7 +744,7 @@ body.paperback {
 		width: 2rem !important;
 		height: 2rem !important;
 		margin: 0 !important;
-		top: .4375rem !important;
+		top: 17% !important;
 	}
 
 	.ui-dialog .ui-dialog-titlebar-close:hover {
@@ -844,6 +823,13 @@ body.paperback {
 		margin: .5rem 1rem .5rem  0 !important;
 	}
 
+
+	.galleryShowButton {
+		padding: .5rem 1rem !important;
+		min-width: 0 !important;
+		margin-left: .5rem !important;
+	}
+
 	#settingsRight {
 		width: auto !important;
 		float: none !important;
@@ -852,6 +838,7 @@ body.paperback {
 		padding: 1.5rem 0 !important;
 		background: $colorBGLight !important;
 		border-top: 1px solid $colorOutlines !important;
+		border-radius: 0 0 4px 4px;
 	}
 
 	#proSettingsBox {
@@ -949,6 +936,9 @@ body.paperback {
 		padding: 0 !important;
 	}
 
+	input[type="checkbox" i] {
+		margin: 1px 16px 0 0 !important;
+	}
 
 
 	/* =================================
