@@ -27,7 +27,7 @@ body.paperback {
   background: url("chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_dark_small.gif") white !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: 40px !important; }
+  background-size: 32px !important; }
 
 #loadingScreen img {
   display: none !important; }
@@ -169,6 +169,9 @@ body.paperback {
 .menu-button {
   padding: 0 !important; }
 
+.menu-options > div:hover, .menu-options > div > a:hover {
+  background: inherit !important; }
+
 .menu-button:hover, #savedViewHUDButton:hover {
   background-color: #F4F5F7 !important;
   border-radius: 50% !important;
@@ -186,17 +189,32 @@ body.paperback {
   background-position: 0 0 !important;
   padding: 0 !important; }
 
+.menu-options {
+  padding: .5rem 0 !important;
+  overflow-x: hidden; }
+
 .menu-options, #savedViewHUD {
   margin-top: .4rem !important;
   background: white !important;
   border: none !important;
-  box-shadow: 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important;
   color: #0e0f11 !important;
-  border-radius: .25rem !important; }
+  border-radius: .25rem !important;
+  min-width: 12rem !important; }
 
-.menu-options > #userEmail {
-  padding: .5rem 1rem !important;
-  font-size: 12px !important; }
+.menuDivider {
+  content: '';
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: #eee;
+  margin: .25rem 0rem .25rem 1rem; }
+
+.button.logout > #userEmail {
+  padding: .25rem 0 !important;
+  font-size: 12px !important;
+  color: #6F7C8B; }
 
 .menu-options > .button {
   padding: .4rem 1rem !important; }
@@ -221,9 +239,10 @@ body.paperback {
   border-radius: 0 !important; }
 
 #helpButton {
-  width: 2rem !important;
-  height: 2rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_help.svg") !important;
+  background-size: 1.5rem !important;
   content: none;
   padding: 0 !important;
   background-repeat: no-repeat !important;
@@ -239,11 +258,18 @@ body.paperback {
 #message {
   color: #0e0f11; }
 
-#site_message {
-  top: 1rem !important; }
-
 #message.errorMessage {
   border-color: #ffeb3b !important; }
+
+#dropdownMessages, #site_message {
+  position: fixed !important;
+  bottom: 0 !important;
+  z-index: 4 !important;
+  width: 100% !important; }
+
+#site_message .closeButton, #message > .close {
+  right: 4rem !important;
+  position: fixed !important; }
 
 /* Starred Pages */
 #savedViewHUD {
@@ -256,7 +282,7 @@ body.paperback {
   max-height: 80vh;
   overflow-y: scroll !important;
   max-width: 39rem !important;
-  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important; }
+  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important; }
 
 #savedViewHUDPageContainer {
   white-space: normal !important;
@@ -269,7 +295,9 @@ body.paperback {
   width: 6rem !important;
   height: 8rem !important;
   margin: 0.5rem !important;
-  padding: 1rem !important; }
+  padding: 1rem !important;
+  font-weight: normal !important;
+  font-style: normal !important; }
 
 .savedViewPage.selectedSavedViewPage {
   box-shadow: none !important;
@@ -364,7 +392,17 @@ body.paperback {
 
 .parent > .name > .parentArrow {
   color: #6F7C8B !important;
-  opacity: 0.4 !important; }
+  opacity: 1 !important;
+  width: .5rem !important;
+  height: .5rem !important;
+  background: url("chrome-extension://__MSG_@@extension_id__/assets/parent_arrow.svg") !important;
+  background-position: left !important;
+  display: inline-block !important;
+  padding: 0 .5rem 0 0 !important;
+  background-repeat: no-repeat !important; }
+
+.parent > .name > .parentArrow:before {
+  content: '' !important; }
 
 .project.task > .name > .bullet, .project.open > .name > .bullet, .noHalo .bullet {
   background-color: transparent !important; }
@@ -420,10 +458,9 @@ a.contentLink {
   background-size: 1px 4px; }
 
 a.contentLink:hover {
-  color: #1C72FF !important;
+  color: #0e0f11 !important;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(109, 115, 128, 0) 33%, transparent 33%);
-  background-position: 0 1rem;
+  background-image: linear-gradient(to bottom, rgba(109, 115, 128, 0.3) 33%, transparent 33%);
   transition: all 0.15s ease-out; }
 
 body, #documentView {
@@ -440,9 +477,9 @@ div.page.active {
   border-style: none !important; }
 
 span.contentTag {
-  color: #1C72FF !important;
+  color: #6F7C8B !important;
   background: #F4F5F7;
-  padding: .125rem .25rem !important;
+  padding: 0 .375rem !important;
   border-radius: 0.5rem !important;
   margin: 0 .125rem !important;
   transition: all 0.15s ease-out; }
@@ -477,7 +514,7 @@ span.contentTagText {
   padding: 6px 0 !important;
   background: white !important;
   border: none !important;
-  box-shadow: 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important;
   width: auto !important; }
 
 #controlsLeft a, #itemSelectionControls a {
@@ -543,7 +580,7 @@ Dialogs										*/
   transition: box-shadow 0.2s ease-in-out !important; }
 
 .ui-dialog:not(#keyboardShortcutHelper) {
-  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important;
   border: none !important; }
 
 .ui-dialog-content {

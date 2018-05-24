@@ -12,6 +12,11 @@ $(document).ready(function() {
 	$('#settingsRight').insertAfter('#settings');
 	$('#accountInfo').insertBefore('#proSettingsBox');
 
+	$('.menu-options>#userEmail').insertAfter('.button.logout>.topBarButtonTextContainer');
+
+	$('<div class="menuDivider"></div>').insertBefore('.button.logout');
+	$('<div class="menuDivider"></div>').insertAfter('.showCompletedButton');
+
 	$('#searchBox').removeAttr('placeholder');
 
 	$('#savedViewHUD:animated').finish();
