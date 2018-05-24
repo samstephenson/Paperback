@@ -1,55 +1,5 @@
 @charset "UTF-8";
 /* ——————VARIABLES———————— */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Regular.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Bold.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-BoldItalic.woff2") format("woff2"), url("chrome-extension://__MSG_@@extension_id__/assets/webfonts/IBMPlexSans-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
 /* COLOR */
 /* TYPE */
 /* EFFECTS */
@@ -77,7 +27,7 @@ body.paperback {
   background: url("chrome-extension://__MSG_@@extension_id__/assets/paperback_spinner_dark_small.gif") white !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: 40px !important; }
+  background-size: 32px !important; }
 
 #loadingScreen img {
   display: none !important; }
@@ -86,7 +36,7 @@ body.paperback {
 .open > .children {
   padding-left: 1.5rem !important;
   margin-left: 9px !important;
-  padding-bottom: 8px !important; }
+  padding-bottom: 9px !important; }
 
 .childrenEnd {
   height: 8px !important; }
@@ -102,6 +52,9 @@ body.paperback {
 
 .selected .project > .name > .content {
   line-height: 1.25rem !important; }
+
+.selected.project {
+  max-width: 40rem !important; }
 
 /* Alerts */
 /* /Alerts */
@@ -131,19 +84,20 @@ body.paperback {
 
 #topHeader {
   margin: .5rem 0;
-  color: #232934 !important;
+  color: #0e0f11 !important;
   font-size: 16px;
   transition: all 0.2s ease-in-out; }
 
 #topHeader .topHeaderTitle {
-  font-weight: 600 !important;
+  font-weight: normal !important;
   width: 100%;
   max-width: 24rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding-bottom: .2rem;
-  margin-bottom: -2rem; }
+  margin-bottom: -2rem;
+  color: #1B2735 !important; }
 
 #searchBox {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_search.svg") !important;
@@ -162,7 +116,6 @@ body.paperback {
 
 #searchForm.clearPrompt #searchBox {
   background: none !important;
-  box-shadow: 0 0 0 1px #DADCDF, 0 4px 8px rgba(27, 39, 51, 0.08) !important;
   border: none !important;
   width: 16rem !important; }
 
@@ -175,7 +128,7 @@ body.paperback {
   height: 12px !important; }
 
 #searchCancel > svg > line {
-  stroke: #232934 !important;
+  stroke: #0e0f11 !important;
   stroke-width: 1.5px !important; }
 
 #visible {
@@ -194,7 +147,7 @@ body.paperback {
 .saveButton, .showCompletedButton, #helpButton, .menu-button, #buttonBar {
   background: none !important;
   border: none !important;
-  color: #6D7380 !important;
+  color: #6F7C8B !important;
   font-size: 14px !important;
   line-height: 1.2 !important;
   padding-left: 0rem !important;
@@ -216,6 +169,9 @@ body.paperback {
 .menu-button {
   padding: 0 !important; }
 
+.menu-options > div:hover, .menu-options > div > a:hover {
+  background: inherit !important; }
+
 .menu-button:hover, #savedViewHUDButton:hover {
   background-color: #F4F5F7 !important;
   border-radius: 50% !important;
@@ -233,17 +189,32 @@ body.paperback {
   background-position: 0 0 !important;
   padding: 0 !important; }
 
+.menu-options {
+  padding: .5rem 0 !important;
+  overflow-x: hidden; }
+
 .menu-options, #savedViewHUD {
   margin-top: .4rem !important;
   background: white !important;
   border: none !important;
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
-  color: #232934 !important;
-  border-radius: .25rem !important; }
+  box-shadow: 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important;
+  color: #0e0f11 !important;
+  border-radius: .25rem !important;
+  min-width: 12rem !important; }
 
-.menu-options > #userEmail {
-  padding: .5rem 1rem !important;
-  font-size: 12px !important; }
+.menuDivider {
+  content: '';
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: #eee;
+  margin: .25rem 0rem .25rem 1rem; }
+
+.button.logout > #userEmail {
+  padding: .25rem 0 !important;
+  font-size: 12px !important;
+  color: #6F7C8B; }
 
 .menu-options > .button {
   padding: .4rem 1rem !important; }
@@ -268,9 +239,10 @@ body.paperback {
   border-radius: 0 !important; }
 
 #helpButton {
-  width: 2rem !important;
-  height: 2rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_help.svg") !important;
+  background-size: 1.5rem !important;
   content: none;
   padding: 0 !important;
   background-repeat: no-repeat !important;
@@ -284,13 +256,20 @@ body.paperback {
   display: none !important; }
 
 #message {
-  color: #232934; }
-
-#site_message {
-  top: 1rem !important; }
+  color: #0e0f11; }
 
 #message.errorMessage {
   border-color: #ffeb3b !important; }
+
+#dropdownMessages, #site_message {
+  position: fixed !important;
+  bottom: 0 !important;
+  z-index: 4 !important;
+  width: 100% !important; }
+
+#site_message .closeButton, #message > .close {
+  right: 4rem !important;
+  position: fixed !important; }
 
 /* Starred Pages */
 #savedViewHUD {
@@ -303,7 +282,7 @@ body.paperback {
   max-height: 80vh;
   overflow-y: scroll !important;
   max-width: 39rem !important;
-  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important; }
+  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important; }
 
 #savedViewHUDPageContainer {
   white-space: normal !important;
@@ -316,11 +295,13 @@ body.paperback {
   width: 6rem !important;
   height: 8rem !important;
   margin: 0.5rem !important;
-  padding: 1rem !important; }
+  padding: 1rem !important;
+  font-weight: normal !important;
+  font-style: normal !important; }
 
 .savedViewPage.selectedSavedViewPage {
   box-shadow: none !important;
-  border-color: #0066FF !important;
+  border-color: #1C72FF !important;
   background-color: #FFFFFF !important; }
 
 .savedViewPageInnerContainer {
@@ -336,7 +317,7 @@ body.paperback {
   margin-left: 2px !important; }
 
 .bullet, #bulletBucket .bulletBucketBullet {
-  background-color: #B9D5FF !important;
+  background-color: #E7F1FF !important;
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bullet.svg") !important;
   background-position: 50% !important;
   background-repeat: no-repeat !important;
@@ -345,7 +326,7 @@ body.paperback {
   top: 5px !important;
   width: 16px !important;
   transition: all .1s ease-in-out;
-  opacity: 0.4; }
+  opacity: 1; }
 
 .project.empty > .name > .bullet {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bullet_empty.svg") !important;
@@ -374,12 +355,12 @@ body.paperback {
   transition: all 0.2s ease-in-out; }
 
 #moveDropLine {
-  background-color: #0066FF !important; }
+  background-color: #1C72FF !important; }
 
 /* Shared Bullet */
 .project.shared > .name > .bullet {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bullet_shared.svg") !important;
-  background-color: rgba(64, 60, 255, 0.24) !important; }
+  background-color: rgba(64, 60, 255, 0.15) !important; }
 
 .selected > .children > .project > .name > .bullet {
   margin-top: 1px !important; }
@@ -394,7 +375,7 @@ body.paperback {
   top: 5px !important; }
 
 #expandButton > svg > line {
-  stroke: #232934 !important; }
+  stroke: #0e0f11 !important; }
 
 /* /bullets */
 .footer, #bottomLinks, .proPitch {
@@ -406,11 +387,22 @@ body.paperback {
 /* Heading */
 /* Breadcrumb */
 .parent > .name > .content {
-  color: #0066FF !important;
+  color: #6F7C8B !important;
   font-size: 14px !important; }
 
 .parent > .name > .parentArrow {
-  color: #B9D5FF !important; }
+  color: #6F7C8B !important;
+  opacity: 1 !important;
+  width: .5rem !important;
+  height: .5rem !important;
+  background: url("chrome-extension://__MSG_@@extension_id__/assets/parent_arrow.svg") !important;
+  background-position: left !important;
+  display: inline-block !important;
+  padding: 0 .5rem 0 0 !important;
+  background-repeat: no-repeat !important; }
+
+.parent > .name > .parentArrow:before {
+  content: '' !important; }
 
 .project.task > .name > .bullet, .project.open > .name > .bullet, .noHalo .bullet {
   background-color: transparent !important; }
@@ -430,12 +422,12 @@ body.paperback {
   padding-left: 73px !important; }
 
 .selected.project > .name {
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
   padding: 0 0 .25rem 100px !important;
-  color: #0A0C0F !important; }
+  color: #0e0f11 !important; }
 
 .selected > .name > .content {
-  line-height: 3rem !important; }
+  line-height: 1.2 !important; }
 
 .selected > .children > .project > .children .project > .name > .content {
   padding-top: 5px !important; }
@@ -444,9 +436,10 @@ body.paperback {
   padding: 1.5rem 0 0 !important; }
 
 .selected > .children > .project > .children > .project {
-  font-size: 1rem !important; }
+  font-size: 16px !important; }
 
 .selected > .notes > .content {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
   margin-bottom: .5rem !important; }
 
 .top, .right, .bottom, .left {
@@ -457,21 +450,25 @@ body.paperback {
 
 /* Global content */
 a.contentLink {
-  color: #0066FF !important;
-  text-decoration: none !important; }
+  color: #6F7C8B !important;
+  text-decoration: none !important;
+  background-image: linear-gradient(to bottom, rgba(109, 115, 128, 0.2) 33%, transparent 33%);
+  background-position: 0 1.1em;
+  background-repeat: repeat-x;
+  background-size: 1px 4px; }
 
 a.contentLink:hover {
-  text-decoration: none; }
+  color: #0e0f11 !important;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(109, 115, 128, 0.3) 33%, transparent 33%);
+  transition: all 0.15s ease-out; }
 
 body, #documentView {
   font-size: 16px !important; }
 
 body, #documentView, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD, #controlsLeft, #itemSelectionControls, #controlsLeft a, #itemSelectionControls a, .ui-widget-content, .ui-widget button, #proSettingsBox .grab-attention, #proSettingsBox h2, .ui-dialog-title, #dropdownMessages, #keyboardShortcutHelper {
-  color: #232934 !important;
-  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important; }
-
-div.content {
-  max-width: 36rem !important; }
+  color: #0e0f11 !important;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important; }
 
 div.getMoreSpaceButton.hoverHand {
   display: none !important; }
@@ -480,18 +477,28 @@ div.page.active {
   border-style: none !important; }
 
 span.contentTag {
-  color: #0066FF !important; }
+  color: #6F7C8B !important;
+  background: #F4F5F7;
+  padding: 0 .375rem !important;
+  border-radius: 0.5rem !important;
+  margin: 0 .125rem !important;
+  transition: all 0.15s ease-out; }
 
 span.contentTagText {
   text-decoration: none !important; }
+
+.content .contentMatch {
+  background: #E7F1FF !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.15s ease-out; }
 
 /* Notes */
 .noted > .notes {
   margin: 0 0 0 1.5rem !important; }
 
 .noted > .notes > .content {
-  font-size: .75rem !important;
-  color: #6D7380 !important; }
+  font-size: 14px !important;
+  color: #6F7C8B !important; }
 
 .selected.noted > .notes {
   margin: 0 !important; }
@@ -507,7 +514,7 @@ span.contentTagText {
   padding: 6px 0 !important;
   background: white !important;
   border: none !important;
-  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important;
   width: auto !important; }
 
 #controlsLeft a, #itemSelectionControls a {
@@ -550,11 +557,11 @@ span.contentTagText {
   background: none !important;
   margin: 0 !important;
   padding: .5rem 1rem !important;
-  color: #6D7380; }
+  color: #6F7C8B; }
 
 .project.shared > .name #controlsLeft a.share, .project.addedShared > .name #controlsLeft a.share {
   font-weight: normal !important;
-  color: #0066FF !important;
+  color: #1C72FF !important;
   text-shadow: none !important;
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/ic_menu_tick.svg") !important;
   background-position: left center !important;
@@ -573,7 +580,7 @@ Dialogs										*/
   transition: box-shadow 0.2s ease-in-out !important; }
 
 .ui-dialog:not(#keyboardShortcutHelper) {
-  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08) !important;
+  box-shadow: 0 0 0 100000px rgba(23, 45, 71, 0.5), 0 0 0 0.5px rgba(99, 114, 130, 0.16), 0 4px 16px rgba(27, 39, 51, 0.05) !important;
   border: none !important; }
 
 .ui-dialog-content {
@@ -586,10 +593,10 @@ Dialogs										*/
   /*border-radius: .25rem !important;*/ }
 
 .ui-widget-content {
-  font-size: UIFontSize !important; }
+  font-size: 14px !important; }
 
 .ui-dialog .ui-dialog-titlebar {
-  padding: 1rem 1.5rem 1rem 2rem !important;
+  padding: 1.1rem 1.5rem 1rem 2rem !important;
   border-bottom: #eee 1px solid !important;
   background: none !important; }
 
@@ -603,7 +610,7 @@ Dialogs										*/
   width: 2rem !important;
   height: 2rem !important;
   margin: 0 !important;
-  top: .4375rem !important; }
+  top: 17% !important; }
 
 .ui-dialog .ui-dialog-titlebar-close:hover {
   background: #F4F5F7 !important;
@@ -626,7 +633,7 @@ Dialogs										*/
 .ui-button .ui-button-text {
   text-shadow: none !important;
   font-weight: normal !important;
-  color: #232934 !important; }
+  color: #0e0f11 !important; }
 
 .ui-state-active.ui-button .ui-button-text {
   color: white !important; }
@@ -638,7 +645,7 @@ Dialogs										*/
   padding: .5rem 1rem !important; }
 
 .ui-state-default.ui-state-active {
-  background: #0066FF !important;
+  background: #1C72FF !important;
   box-shadow: none !important;
   color: white !important; }
 
@@ -668,6 +675,11 @@ Settings 																		*/
 .gallerySelector {
   margin: .5rem 1rem .5rem  0 !important; }
 
+.galleryShowButton {
+  padding: .5rem 1rem !important;
+  min-width: 0 !important;
+  margin-left: .5rem !important; }
+
 #settingsRight {
   width: auto !important;
   float: none !important;
@@ -675,7 +687,8 @@ Settings 																		*/
   margin-top: 1rem !important;
   padding: 1.5rem 0 !important;
   background: #F4F5F7 !important;
-  border-top: 1px solid #eee !important; }
+  border-top: 1px solid #eee !important;
+  border-radius: 0 0 4px 4px; }
 
 #proSettingsBox {
   background: none !important;
@@ -688,13 +701,13 @@ Settings 																		*/
 
 .smallSettingsButton, .pro-settings-link, a.pro-settings-link, .setting a {
   font-size: 12px !important;
-  color: #6D7380 !important;
+  color: #6F7C8B !important;
   text-decoration: none !important;
   margin: .5rem 1rem  0 0 !important;
   border-bottom: 1px solid rgba(108, 120, 138, 0.2) !important; }
 
 .smallSettingsButton:hover, .pro-settings-link:hover, a.pro-settings-link:hover {
-  color: #0066FF !important;
+  color: #1C72FF !important;
   border: none !important; }
 
 #proSettingsBox .grab-attention {
@@ -703,12 +716,12 @@ Settings 																		*/
 
 #proSettingsBox a, .pro-settings-link {
   display: inline !important;
-  color: #6D7380 !important;
+  color: #6F7C8B !important;
   font-weight: normal !important;
   text-decoration: none !important; }
 
 #proSettingsBox .grab-attention a, .setting a {
-  color: #0066FF !important;
+  color: #1C72FF !important;
   border-bottom: none !important; }
 
 .setting a {
@@ -744,7 +757,7 @@ Settings 																		*/
 
 #proSettingsBox p {
   margin: .25rem 0 .5rem !important;
-  color: #6D7380; }
+  color: #6F7C8B; }
 
 .team-upgrade-button {
   text-align: left !important;
@@ -753,6 +766,9 @@ Settings 																		*/
 
 #settingsPopup {
   padding: 0 !important; }
+
+input[type="checkbox" i] {
+  margin: 1px 16px 0 0 !important; }
 
 /* =================================
 Help													*/
@@ -800,8 +816,8 @@ Help													*/
 
 #helpRadio > span.current {
   border: none !important;
-  border-bottom: 1px solid #0066FF !important;
-  color: #0066FF !important;
+  border-bottom: 1px solid #1C72FF !important;
+  color: #1C72FF !important;
   top: 1px !important; }
 
 #libraryContainer .book {
@@ -811,12 +827,12 @@ Help													*/
   border: none !important;
   box-shadow: inset 0 0 0 1px #DADCDF !important;
   border-radius: .25rem !important;
-  color: #6D7380 !important; }
+  color: #6F7C8B !important; }
 
 #libraryContainer .fancyButton.active {
   box-shadow: none !important;
   text-shadow: none !important;
-  background: #0066FF !important;
+  background: #1C72FF !important;
   border: none !important;
   color: white !important; }
 
@@ -853,7 +869,7 @@ input[type="radio" i] {
   margin: .5rem 0.5ex !important; }
 
 #sharePopup .share_prompt #shareTypeSelector .shareTypeOption .shareTypeOptionDescription {
-  color: #6D7380; }
+  color: #6F7C8B; }
 
 sharedEmailsTableContainer {
   margin-left: 0 !important; }
